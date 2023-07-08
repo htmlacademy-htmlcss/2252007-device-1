@@ -8,15 +8,16 @@
   <body>
     <header class="main-header">
       <!-- User navigation -->
-      <img class="logo-black" src="" alt="Логотип фирмы Девайс." />
+      <a href="index.html" class="main-logo">
+        <img class="logo-black" src="" alt="Логотип фирмы Девайс." />
+      </a>
       <nav class="user-navigation">
         <form
           class="search-form"
           action="https://echo.htmlacademy.ru/"
-          method="post"
+          method="get"
         >
           <input
-            type="image"
             name="image"
             src="images/nav-search.svg"
             width=""
@@ -31,7 +32,7 @@
             id="search-device"
             required
           />
-          <button name="search" class="button-search" type="submit">
+          <button class="button-search" type="submit">
             <span class="visually-hidden">Найти</span>
           </button>
         </form>
@@ -78,17 +79,14 @@
 
     <!-- Main content -->
     <main class="main-content">
-      <h1>Каталог моноподов</h1>
       <section class="page-content">
         <h2>Моноподы для селфи</h2>
         <ul class="breadcrubs">
           <li class="breadcrubs-item">
             <a href="#">Главная</a>
-            <img src="" alt="Указатель." />
           </li>
           <li class="breadcrubs-item">
             <a href="#">Каталог товаров</a>
-            <img src="" alt="Указатель." />
           </li>
           <li class="breadcrubs-item">
             <a href="#">Моноподы для селфи</a>
@@ -169,7 +167,8 @@
               <li class="catalog-filter-item">
                 <label for="" class="control-label">
                   <input
-                    name="color-black"
+                    name="bluetooth"
+                    value="with-bluetooth"
                     type="radio"
                     class="control-input"
                     checked
@@ -179,7 +178,8 @@
               <li class="catalog-filter-item">
                 <label for="" class="control-label">
                   <input
-                    name="color-black"
+                    name="bluetooth"
+                    value="without-bluetooth"
                     type="radio"
                     class="control-input"
                   />Нет
@@ -203,14 +203,10 @@
 
         <ul class="sort-list">
           <li class="sort-item">
-            <a href="#">
-              <img src="" alt="Вверх." />
-            </a>
+            <a href="#"> </a>
           </li>
           <li class="sort-item">
-            <a href="#">
-              <img src="" alt="Вниз." />
-            </a>
+            <a href="#"> </a>
           </li>
         </ul>
       </section>
