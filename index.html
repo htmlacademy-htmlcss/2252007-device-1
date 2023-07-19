@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <header class="main-header">
@@ -92,7 +93,7 @@
               Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
               лазером, замаскированным под стандартную камеру.
             </p>
-            <a href="#">Подробнее</a>
+            <a class="samples-more" href="#">Подробнее</a>
 
             <table class="samples-distance">
               <tr>
@@ -123,7 +124,7 @@
               Мотивирующие фитнес-браслеты помогут найти в себе силы не
               пропускать занятия и соблюдать диету.
             </p>
-            <a href="#">Подробнее</a>
+            <a class="samples-more" href="#">Подробнее</a>
 
             <table class="samples-distance">
               <tr>
@@ -152,7 +153,7 @@
               Самая длинная палка для селфи доступна в нашем магазине. Восемь
               (Восемь, Карл!) метров длиной и весом всего 5 кг.
             </p>
-            <a href="#">Подробнее</a>
+            <a class="samples-more" href="#">Подробнее</a>
 
             <table class="samples-distance">
               <tr>
@@ -206,7 +207,7 @@
         <h2 class="visually-hidden">Каталог товаров</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <a href="#">
+            <a class="catalog-link" href="#">
               <img
                 class="catalog-image"
                 src="images/category-1.svg"
@@ -219,7 +220,7 @@
           </li>
 
           <li class="catalog-item">
-            <a href="#">
+            <a class="catalog-link" href="#">
               <img
                 class="catalog-image"
                 src="images/category-2.svg"
@@ -232,7 +233,7 @@
           </li>
 
           <li class="catalog-item">
-            <a href="#">
+            <a class="catalog-link" href="#">
               <img
                 class="catalog-image"
                 src="images/category-3.svg"
@@ -245,7 +246,7 @@
           </li>
 
           <li class="catalog-item">
-            <a href="#">
+            <a class="catalog-link" href="#">
               <img
                 class="catalog-image"
                 src="images/category-4.svg"
@@ -258,7 +259,7 @@
           </li>
 
           <li class="catalog-item">
-            <a href="#">
+            <a class="catalog-link" href="#">
               <img
                 class="catalog-image"
                 src="images/category-5.svg"
@@ -271,7 +272,7 @@
           </li>
 
           <li class="catalog-item">
-            <a href="#">
+            <a class="catalog-link" href="#">
               <img
                 class="catalog-image"
                 src="images/category-6.svg"
@@ -331,7 +332,9 @@
 
         <!-- Button -->
         <div class="delivery-rare-item">
-          <button type="button">Доставим редкий товар под заказ</button>
+          <button class="delivery-rare-item-button" type="button">
+            Доставим редкий товар под заказ
+          </button>
         </div>
       </section>
 
@@ -409,7 +412,7 @@
 
       <!-- Footer -->
       <footer class="main-footer">
-        <section class="adress">
+        <section class="address">
           <h2 class="visually-hidden">Адрес</h2>
           <a href="#" class="logo-yellow">
             <img

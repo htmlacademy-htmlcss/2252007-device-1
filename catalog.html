@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Catalog</title>
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <header class="main-header">
@@ -21,14 +22,8 @@
         <form
           class="search-form"
           action="https://echo.htmlacademy.ru/"
-          method="get"
+          method="post"
         >
-          <input
-            name="image"
-            src="images/nav-search.svg"
-            width=""
-            alt="Поиск по сайту."
-          />
           <label class="visually-hidden" for="search-device">Device</label>
           <input
             type="search"
@@ -39,7 +34,7 @@
             required
           />
           <button class="button-search" type="submit">
-            <span class="visually-hidden">Найти</span>
+            <span>Найти</span>
           </button>
         </form>
 
@@ -48,7 +43,9 @@
             <a class="user-navigation-link" href="#">Коля Петухов </a>
           </li>
           <li class="user-navigation-item">
-            <a class="user-navigation-link" href="#"> Выйти </a>
+            <a class="user-navigation-link user-navigation-link-pale" href="#">
+              Выйти
+            </a>
           </li>
           <li class="user-navigation-item">
             <a class="user-navigation-link" href="#">Сравнить </a>
@@ -84,20 +81,20 @@
         <h1>Моноподы для селфи</h1>
         <ul class="breadcrubs">
           <li class="breadcrubs-item">
-            <a href="index.html">Главная</a>
+            <a class="breadcrubs-link" href="index.html">Главная</a>
           </li>
           <li class="breadcrubs-item">
-            <a href="catalog.html">Каталог товаров</a>
+            <a class="breadcrubs-link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="breadcrubs-item">
-            <a href="#">Моноподы для селфи</a>
+            <a class="breadcrubs-link" href="#">Моноподы для селфи</a>
           </li>
         </ul>
       </section>
 
       <!-- Filter -->
       <section class="filter">
-        <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+        <h2>Фильтр:</h2>
 
         <form
           action="https://echo.htmlacademy.ru/"
@@ -189,13 +186,13 @@
             </ul>
           </fieldset>
 
-          <button class="button" type="submit">Показать</button>
+          <button class="button-filter" type="submit">Показать</button>
         </form>
       </section>
 
       <!-- Sorting -->
       <section class="sorting-container">
-        <h2>Сортировка</h2>
+        <h2>Сортировка:</h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Популярные</option>
           <option value="cheap">Дешевые</option>
@@ -224,7 +221,7 @@
               alt="Любительская селфи-палка."
               class="product-card-img"
             />
-            <a href="#" class="more">Подробнее</a>
+            <a href="#" class="more-product-list">Подробнее</a>
             <div class="product-card-description">
               <a class="product-card-title" href="#">
                 <p>Любительская селфи-палка</p>
@@ -241,7 +238,7 @@
               alt="Профессиональная селфи-палка."
               class="product-card-img"
             />
-            <a href="#" class="more">Подробнее</a>
+            <a href="#" class="more-product-list">Подробнее</a>
             <div class="product-card-description">
               <a class="product-card-title" href="#">
                 <p>Профессиональная селфи-палка</p>
@@ -258,7 +255,7 @@
               alt="Непотопляемая селфи-палка."
               class="product-card-img"
             />
-            <a href="#" class="more">Подробнее</a>
+            <a href="#" class="more-product-list">Подробнее</a>
             <div class="product-card-description">
               <a class="product-card-title" href="#">
                 <p>Непотопляемая селфи-палка</p>
@@ -275,7 +272,7 @@
               alt="Селфи-палка «Следуй за мной»."
               class="product-card-img"
             />
-            <a href="#" class="more">Подробнее</a>
+            <a href="#" class="more-product-list">Подробнее</a>
             <div class="product-card-description">
               <a class="product-card-title" href="#">
                 <p>Селфи-палка «Следуй за мной»</p>
@@ -284,7 +281,7 @@
             </div>
           </li>
         </ul>
-        <button class="button" type="submit">Загрузить ещё</button>
+        <button class="button-product-list" type="submit">Загрузить ещё</button>
 
         <!-- Pagination -->
         <div class="pagination">
