@@ -1,5 +1,5 @@
 @font-face {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
@@ -23,7 +23,7 @@
 }
 
 body {
-  font-family: Rubik sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
   background-color: #ffffff;
@@ -38,14 +38,14 @@ body {
 
 .user-navigation {
   color: #000000;
-  font-family: Rubik, sans-serif;
+  font-family: "Rubik", sans-serif;
   line-height: 30px;
   font-weight: 400;
 }
 
 .user-navigation-link {
   color: #000000;
-  font-family: Rubik, sans-serif;
+  font-family: "Rubik", sans-serif;
   line-height: 30px;
   font-weight: 400;
   text-decoration: none;
@@ -53,7 +53,7 @@ body {
 
 .main-navigation {
   color: #000000;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   letter-spacing: 3.6px;
   text-transform: uppercase;
@@ -67,7 +67,7 @@ body {
 
 .main-navigation-link {
   color: #000000;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   letter-spacing: 3.6px;
   text-transform: uppercase;
@@ -75,7 +75,7 @@ body {
 }
 
 .samples {
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
   color: #444444;
   font-weight: 400;
   line-height: 30px;
@@ -83,7 +83,7 @@ body {
 }
 
 .samples-title {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   color: #000000;
   font-size: 50px;
   font-weight: 800;
@@ -91,7 +91,7 @@ body {
 }
 
 .samples-more {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   text-align: center;
   font-size: 18px;
   font-weight: 800;
@@ -108,12 +108,20 @@ body {
   line-height: 30px;
 }
 
+.samples-distance td {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #444444;
+}
+
 .catalog-item {
   background-color: #ffe17f;
 }
 
 .catalog-link {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
@@ -127,7 +135,7 @@ body {
 }
 
 .services-link {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   text-align: center;
   font-size: 18px;
   font-weight: 800;
@@ -143,14 +151,15 @@ body {
 }
 
 .services-slider-title {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;
+  color: #000000;
 }
 
 .services-slider-description {
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
@@ -163,7 +172,7 @@ body {
 
 .delivery-rare-item-button {
   text-align: center;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 20px;
   font-weight: 800;
   letter-spacing: 4px;
@@ -172,7 +181,7 @@ body {
 }
 
 .about-us-contacts {
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
@@ -181,7 +190,7 @@ body {
 
 .about-us-title,
 .contacts-title {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;
@@ -197,7 +206,7 @@ body {
 
 .more-about-us,
 .contact-us {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   text-align: center;
   font-weight: 800;
   letter-spacing: 3.6px;
@@ -218,7 +227,7 @@ body {
 
 .subscription {
   background-color: #f0f0f0;
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
@@ -226,7 +235,7 @@ body {
 }
 
 .subscription-title {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;
@@ -234,16 +243,18 @@ body {
 }
 
 .subscribe {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   text-align: center;
+  font-size: 18px;
   font-weight: 800;
   letter-spacing: 3.6px;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .main-footer {
   background-color: #444444;
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -251,7 +262,7 @@ body {
 }
 
 .footer-navigation-link {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 800;
   letter-spacing: 3.6px;
@@ -266,11 +277,11 @@ body {
 
 /* Catalog */
 .user-navigation-link-pale {
-  opacity: 0.30000001192092896;
+  opacity: 0.3;
 }
 
 .page-content h1 {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;
@@ -278,7 +289,7 @@ body {
 }
 
 .breadcrubs-link {
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -288,7 +299,7 @@ body {
 
 .filter {
   background-color: #f0f0f0;
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -297,7 +308,7 @@ body {
 }
 
 .filter h2 {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 800;
   letter-spacing: 3.2px;
@@ -307,7 +318,7 @@ body {
 
 .price-title,
 .catalog-filter-title {
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
@@ -316,17 +327,17 @@ body {
 }
 
 .price p {
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  opacity: 0.30000001192092896;
+  opacity: 0.3;
   color: #000000;
 }
 
 .button-filter {
   text-align: center;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 800;
   letter-spacing: 3.6px;
@@ -335,7 +346,7 @@ body {
 }
 
 .sorting-container {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 800;
   letter-spacing: 3.2px;
@@ -344,7 +355,7 @@ body {
 }
 
 .select-control {
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
@@ -356,7 +367,7 @@ body {
 }
 
 .product-card-title {
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
@@ -367,7 +378,7 @@ body {
 
 .product-card-price {
   text-align: right;
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
   font-weight: 400;
   color: #444444;
@@ -375,7 +386,7 @@ body {
 
 .more-product-list {
   text-align: center;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 800;
   letter-spacing: 3.6px;
@@ -386,7 +397,7 @@ body {
 
 .button-product-list {
   text-align: center;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 800;
   letter-spacing: 3.2px;
@@ -395,18 +406,37 @@ body {
 }
 
 .pagination-link {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 800;
   letter-spacing: 3.6px;
   text-transform: uppercase;
   color: #444444;
   text-decoration: none;
-  opacity: 0.30000001192092896;
+  opacity: 0.3;
+}
+
+.pagination-link-number {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #444444;
+  opacity: 0.3;
+  text-decoration: none;
+}
+
+.pagination-dots {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #444444;
+  opacity: 0.3;
 }
 
 .pagination-current {
-  opacity: 0.6000000238418579;
+  opacity: 0.6;
 }
 
 .pagination-next {
