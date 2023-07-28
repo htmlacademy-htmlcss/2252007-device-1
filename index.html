@@ -16,27 +16,31 @@
         alt="Логотип фирмы Девайс."
       />
       <nav class="user-navigation">
-        <form
-          class="search-form"
-          action="https://echo.htmlacademy.ru/"
-          method="post"
-        >
-          <label class="visually-hidden" for="search-device">Device</label>
-          <input
-            type="search"
-            class="field"
-            placeholder="Поиск по сайту"
-            name="search-device"
-            id="search-device"
-            required
-          />
-          <button class="button-search" type="submit">
-            <span>Найти</span>
-          </button>
-        </form>
+        <div class="container-form">
+          <form
+            class="search-form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+            <label class="visually-hidden" for="search-device" hidden
+              >Device</label
+            >
+            <input
+              type="search"
+              class="field"
+              placeholder="Поиск по сайту"
+              name="search-device"
+              id="search-device"
+              required
+            />
+            <button class="button-search" type="submit">
+              <span>Найти</span>
+            </button>
+          </form>
+        </div>
 
         <ul class="user-navigation-list">
-          <li class="user-navigation-item">
+          <li class="user-navigation-item enter">
             <a class="user-navigation-link" href="#">Войти </a>
           </li>
           <li class="user-navigation-item">
@@ -67,18 +71,20 @@
       </nav>
     </header>
 
-    <main class="main-content">
-      <h1 class="visually-hidden">Device</h1>
+    <main class="main-container main-content">
+      <h1 class="visually-hidden" hidden>Device</h1>
 
       <!-- Samples -->
       <section class="samples">
-        <h2 class="visually-hidden">Примеры товаров</h2>
+        <h2 class="visually-hidden" hidden>Примеры товаров</h2>
 
-        <ol class="samples">
+        <ol class="samples-list">
           <!-- First item -->
           <li class="samples-item">
+            <div class="header-yellow"></div>
             <a href="#">
               <img
+                class="samples-slider"
                 src="images/slider-1.png"
                 width="560"
                 height="560"
@@ -108,6 +114,7 @@
           </li>
           <!-- Second item -->
           <li class="samples-item">
+            <div class="header-yellow"></div>
             <a href="#">
               <img
                 src="images/slider-2.png"
@@ -137,6 +144,7 @@
           </li>
           <!-- Third item -->
           <li class="samples-item">
+            <div class="header-yellow"></div>
             <a href="#">
               <img
                 src="images/slider-3.png"
@@ -204,7 +212,7 @@
 
       <!-- Catalog -->
       <section class="catalog">
-        <h2 class="visually-hidden">Каталог товаров</h2>
+        <h2 class="visually-hidden" hidden>Каталог товаров</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
             <a class="catalog-link" href="#">
