@@ -10,67 +10,69 @@
     <header class="main-header">
       <!-- User navigation -->
       <div class="container">
-        <img
-          class="logo-black"
-          src="images/logo-device-black.svg"
-          width="145"
-          height="36"
-          alt="Логотип фирмы Девайс."
-        />
-        <nav class="user-navigation">
-          <div class="container-form">
-            <form
-              class="search-form"
-              action="https://echo.htmlacademy.ru/"
-              method="get"
-            >
-              <label class="visually-hidden" for="search-device" hidden
-                >Device</label
+        <div class="navigation-container">
+          <img
+            class="logo-black"
+            src="images/logo-device-black.svg"
+            width="145"
+            height="36"
+            alt="Логотип фирмы Девайс."
+          />
+          <nav class="user-navigation">
+            <div class="container-form">
+              <form
+                class="search-form"
+                action="https://echo.htmlacademy.ru/"
+                method="get"
               >
-              <input
-                type="search"
-                class="field"
-                placeholder="Поиск по сайту"
-                name="search-device"
-                id="search-device"
-                required
-              />
-              <button class="button-search" type="submit">
-                <span>Найти</span>
-              </button>
-            </form>
-          </div>
+                <label class="visually-hidden" for="search-device" hidden
+                  >Device</label
+                >
+                <input
+                  type="search"
+                  class="field"
+                  placeholder="Поиск по сайту"
+                  name="search-device"
+                  id="search-device"
+                  required
+                />
+                <button class="button-search" type="submit">
+                  <span>Найти</span>
+                </button>
+              </form>
+            </div>
 
-          <ul class="user-navigation-list">
-            <li class="user-navigation-item enter">
-              <a class="user-navigation-link" href="#">Войти </a>
-            </li>
-            <li class="user-navigation-item">
-              <a class="user-navigation-link" href="#">Сравнить </a>
-            </li>
-            <li class="user-navigation-item">
-              <a class="user-navigation-link" href="#">Корзина </a>
-            </li>
-          </ul>
-        </nav>
+            <ul class="user-navigation-list">
+              <li class="user-navigation-item enter">
+                <a class="user-navigation-link" href="#">Войти </a>
+              </li>
+              <li class="user-navigation-item">
+                <a class="user-navigation-link" href="#">Сравнить </a>
+              </li>
+              <li class="user-navigation-item">
+                <a class="user-navigation-link" href="#">Корзина </a>
+              </li>
+            </ul>
+          </nav>
 
-        <!-- Main navigation -->
-        <nav class="main-navigation">
-          <a class="main-navigation-catalog-link" href="catalog.html">
-            <p class="items-catalog">Каталог товаров</p>
-          </a>
-          <ul class="main-navigation-list">
-            <li class="main-navigation-item">
-              <a class="main-navigation-link" href="#">Доставка</a>
-            </li>
-            <li class="main-navigation-item">
-              <a class="main-navigation-link" href="#">Гарантия</a>
-            </li>
-            <li class="main-navigation-item">
-              <a class="main-navigation-link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+          <!-- Main navigation -->
+          <nav class="main-navigation">
+            <a class="main-navigation-catalog-link" href="catalog.html">
+              <p class="items-catalog">Каталог товаров</p>
+            </a>
+            <ul class="main-navigation-list">
+              <li class="main-navigation-item">
+                <a class="main-navigation-link" href="#">Доставка</a>
+              </li>
+              <li class="main-navigation-item">
+                <a class="main-navigation-link" href="#">Гарантия</a>
+              </li>
+              <li class="main-navigation-item">
+                <a class="main-navigation-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -78,15 +80,15 @@
       <h1 class="visually-hidden">Device</h1>
 
       <!-- Samples -->
-      <section class="samples">
+      <section class="samples container">
         <h2 class="visually-hidden">Примеры товаров</h2>
 
         <ol class="samples-list">
           <!-- First item -->
 
           <li class="samples-item">
-            <ul class="samples-list-inner">
-              <li class="samples-little-inner-item">
+            <div class="samples-list-inner">
+              <div class="samples-little-inner-item">
                 <a class="samples-link" href="#">
                   <img
                     class="samples-image"
@@ -96,8 +98,8 @@
                     alt="Квадрокоптер с мощным лазером."
                   />
                 </a>
-              </li>
-              <li class="samples-little-inner-item">
+              </div>
+              <div class="samples-little-inner-item">
                 <p class="samples-number">01</p>
 
                 <div class="samples-about">
@@ -121,13 +123,13 @@
                     </tr>
                   </table>
                 </div>
-              </li>
-            </ul>
+              </div>
+            </div>
           </li>
           <!-- Second item -->
           <li class="samples-item">
-            <ul class="samples-list-inner">
-              <li class="samples-little-inner-item">
+            <div class="samples-list-inner">
+              <div class="samples-little-inner-item">
                 <a class="samples-link" href="#">
                   <img
                     class="samples-image"
@@ -137,8 +139,8 @@
                     alt="Фитнесс-браслет."
                   />
                 </a>
-              </li>
-              <li class="samples-little-inner-item">
+              </div>
+              <div class="samples-little-inner-item">
                 <p class="samples-number">02</p>
 
                 <div class="samples-about">
@@ -158,14 +160,14 @@
                     </tr>
                   </table>
                 </div>
-              </li>
-            </ul>
+              </div>
+            </div>
           </li>
 
           <!-- Third item -->
           <li class="samples-item">
-            <ul class="samples-list-inner">
-              <li class="samples-little-inner-item">
+            <div class="samples-list-inner">
+              <div class="samples-little-inner-item">
                 <a class="samples-link" href="#">
                   <img
                     class="samples-image"
@@ -175,8 +177,8 @@
                     alt="Селфи-палка."
                   />
                 </a>
-              </li>
-              <li class="samples-little-inner-item">
+              </div>
+              <div class="samples-little-inner-item">
                 <p class="samples-number">03</p>
 
                 <div class="samples-about">
@@ -200,8 +202,8 @@
                     </tr>
                   </table>
                 </div>
-              </li>
-            </ul>
+              </div>
+            </div>
           </li>
         </ol>
 
@@ -238,83 +240,95 @@
       </section>
 
       <!-- Catalog -->
-      <section class="catalog">
+      <section class="catalog container">
         <h2 class="visually-hidden">Каталог товаров</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
             <a class="catalog-link" href="#">
-              <img
-                class="catalog-image"
-                src="images/category-1.svg"
-                width="160"
-                height="253"
-                alt="Раздел каталога: Виртуальная реальность."
-              />
+              <div class="catalog-image-wrapper">
+                <img
+                  class="catalog-image"
+                  src="images/category-1.svg"
+                  width="160"
+                  height="160"
+                  alt="Раздел каталога: Виртуальная реальность."
+                />
+              </div>
               <p class="catalog-description">Виртуальная реальность</p>
             </a>
           </li>
 
           <li class="catalog-item">
             <a class="catalog-link" href="#">
-              <img
-                class="catalog-image"
-                src="images/category-2.svg"
-                width="160"
-                height="253"
-                alt="Раздел каталога: Моноподы для селфи."
-              />
+              <div class="catalog-image-wrapper">
+                <img
+                  class="catalog-image"
+                  src="images/category-2.svg"
+                  width="160"
+                  height="160"
+                  alt="Раздел каталога: Моноподы для селфи."
+                />
+              </div>
               <p class="catalog-description">Моноподы для селфи</p>
             </a>
           </li>
 
           <li class="catalog-item">
             <a class="catalog-link" href="#">
-              <img
-                class="catalog-image"
-                src="images/category-3.svg"
-                width="160"
-                height="253"
-                alt="Раздел каталога: Экшн-камеры."
-              />
+              <div class="catalog-image-wrapper">
+                <img
+                  class="catalog-image"
+                  src="images/category-3.svg"
+                  width="160"
+                  height="160"
+                  alt="Раздел каталога: Экшн-камеры."
+                />
+              </div>
               <p class="catalog-description">Экшн-камеры</p>
             </a>
           </li>
 
           <li class="catalog-item">
             <a class="catalog-link" href="#">
-              <img
-                class="catalog-image"
-                src="images/category-4.svg"
-                width="160"
-                height="253"
-                alt="Раздел каталога: Фитнес-браслеты."
-              />
+              <div class="catalog-image-wrapper">
+                <img
+                  class="catalog-image"
+                  src="images/category-4.svg"
+                  width="160"
+                  height="160"
+                  alt="Раздел каталога: Фитнес-браслеты."
+                />
+              </div>
               <p class="catalog-description">Фитнес-браслеты</p>
             </a>
           </li>
 
           <li class="catalog-item">
             <a class="catalog-link" href="#">
-              <img
-                class="catalog-image"
-                src="images/category-5.svg"
-                width="160"
-                height="253"
-                alt="Раздел каталога: Умные часы."
-              />
+              <div class="catalog-image-wrapper">
+                <img
+                  class="catalog-image"
+                  src="images/category-5.svg"
+                  width="160"
+                  height="160"
+                  alt="Раздел каталога: Умные часы."
+                />
+              </div>
               <p class="catalog-description">Умные часы</p>
             </a>
           </li>
 
           <li class="catalog-item">
             <a class="catalog-link" href="#">
-              <img
-                class="catalog-image"
-                src="images/category-6.svg"
-                width="160"
-                height="253"
-                alt="Раздел каталога: Квадрокоптеры."
-              />
+              <div class="catalog-image-wrapper">
+                <img
+                  class="catalog-image"
+                  src="images/category-6.svg"
+                  width="160"
+                  height="160"
+                  alt="Раздел каталога: Квадрокоптеры."
+                />
+              </div>
               <p class="catalog-description">Квадрокоптеры</p>
             </a>
           </li>
@@ -323,7 +337,7 @@
 
       <!-- Services -->
       <section class="services">
-        <div class="services-container">
+        <div class="services-container container">
           <h2 class="visually-hidden">Доставка товаров</h2>
 
           <ol class="services-list">
@@ -370,17 +384,17 @@
             </ol>
           </div>
         </div>
-
-        <!-- Delivery Button -->
-        <div class="delivery-rare-item">
-          <button class="delivery-rare-item-button" type="button">
-            Доставим редкий товар под заказ
-          </button>
-        </div>
       </section>
 
+      <!-- Delivery Button -->
+      <div class="delivery-rare-item container">
+        <button class="delivery-rare-item-button" type="button">
+          Доставим редкий товар под заказ
+        </button>
+      </div>
+
       <!-- About us -->
-      <div class="about-us-contacts">
+      <div class="about-us-contacts container">
         <section class="about-us">
           <h3 class="about-us-title">О нас</h3>
           <p>
@@ -421,7 +435,7 @@
 
       <!-- Subscription -->
       <section class="subscription">
-        <div class="subscription-container">
+        <div class="subscription-container container">
           <div class="subscribe-text">
             <h2 class="subscription-title">Подпишитесь на рассылку</h2>
             <p class="subscription-text">
@@ -453,16 +467,14 @@
               </button>
             </form>
 
-            <div class="free">
-              <p>Это бесплатно</p>
-            </div>
+            <p class="free">Это бесплатно</p>
           </div>
         </div>
       </section>
 
       <!-- Footer -->
       <footer class="main-footer">
-        <div class="footer-container">
+        <div class="footer-container container">
           <!-- Address -->
           <section class="address">
             <h2 class="visually-hidden">Адрес</h2>
