@@ -82,24 +82,24 @@
 
     <!-- Main content -->
     <main class="main-content">
-      <section class="page-content">
+      <section class="page-content container">
         <h1>Моноподы для селфи</h1>
-        <ul class="breadcrubs">
-          <li class="breadcrubs-item">
-            <a class="breadcrubs-link" href="index.html">Главная</a>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
           </li>
-          <li class="breadcrubs-item">
-            <a class="breadcrubs-link" href="catalog.html">Каталог товаров</a>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="breadcrubs-item">
-            <a class="breadcrubs-link" href="#">Моноподы для селфи</a>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
           </li>
         </ul>
       </section>
 
       <!-- Catalog Container -->
       <div class="main-container">
-        <div class="catalog-container">
+        <div class="catalog-container container">
           <!-- Filter -->
           <section class="filter">
             <h2>Фильтр:</h2>
@@ -110,12 +110,12 @@
                 method="get">
 
               <fieldset class="price">
-                  <legend class="price-title">Стоимость</legend>
+                  <p class="price-title">Стоимость</p>
                   <p>от 0 до 5000</p>
               </fieldset>
 
               <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Цвет</legend>
+                <p class="catalog-filter-title">Цвет</p>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label for="" class="control-label">
@@ -168,7 +168,7 @@
               </fieldset>
 
               <fieldset class="catalog-filter-group">
-                  <legend class="catalog-filter-title">Bluetooth</legend>
+                  <p class="catalog-filter-title">Bluetooth</p>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label for="" class="control-label">
@@ -296,38 +296,33 @@
 
               <!-- Pagination -->
               <div class="pagination">
-                <ul class="pagination-list">
+                <a
+                  class="pagination-link pagination-prev pagination-disabled"
+                  href="#"
+                  >Назад</a
+                >
+
+                <ul class="pagination-pages">
                   <li class="pagination-item">
-                    <a
-                      class="pagination-link pagination-prev pagination-disabled"
-                      href="#"
-                      >Назад</a
-                    >
+                    <a class="pagination-link-number pagination-current" href="#"
+                    >1</a>
                   </li>
                   <li class="pagination-item">
-                    <ul class="pagination-pages">
-                      <li class="pagination-item">
-                        <a class="pagination-link-number pagination-current" href="#"
-                        >1</a>
-                      </li>
-                      <li class="pagination-item">
-                        <a class="pagination-link-number" href="">2</a>
-                      </li>
-                      <li class="pagination-item">
-                        <a class="pagination-link-number" href="">3</a>
-                      </li>
-                      <li class="pagination-item">
-                        <span class="pagination-dots">...</span>
-                      </li>
-                      <li class="pagination-item">
-                        <a href="#" class="pagination-link-number">10</a>
-                      </li>
-                    </ul>
+                    <a class="pagination-link-number" href="">2</a>
                   </li>
                   <li class="pagination-item">
-                    <a href="#" class="pagination-link pagination-next">Вперёд</a>
+                    <a class="pagination-link-number" href="">3</a>
+                  </li>
+                  <li class="pagination-item">
+                    <span class="pagination-dots">...</span>
+                  </li>
+                  <li class="pagination-item">
+                    <a href="#" class="pagination-link-number">10</a>
                   </li>
                 </ul>
+
+                <a href="#" class="pagination-link pagination-next">Вперёд</a>
+
               </div>
             </section>
           </div>
@@ -337,7 +332,7 @@
 
     <!-- Footer -->
     <footer class="main-footer">
-      <div class="footer-container">
+      <div class="footer-container container">
         <!-- Address -->
         <section class="address">
           <h2 class="visually-hidden">Адрес</h2>
