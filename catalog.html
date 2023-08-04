@@ -10,74 +10,80 @@
     <header class="main-header">
       <!-- User navigation -->
       <div class="container">
-        <a href="index.html" class="main-logo">
-          <img
-            class="logo-black"
-            src="images/logo-device-black.svg"
-            width="145"
-            height="36"
-            alt="Логотип фирмы Девайс."
-          />
-        </a>
-        <nav class="user-navigation">
-          <div class="container-form">
-            <form
-              class="search-form"
-              action="https://echo.htmlacademy.ru/"
-              method="get"
-            >
-              <label class="visually-hidden" for="search-device" hidden
-                >Device</label
+        <div class="navigation-container">
+          <a href="index.html" class="main-logo">
+            <img
+              class="logo-black"
+              src="images/logo-device-black.svg"
+              width="145"
+              height="36"
+              alt="Логотип фирмы Девайс."
+            />
+          </a>
+          <nav class="user-navigation">
+            <div class="container-form">
+              <form
+                class="search-form"
+                action="https://echo.htmlacademy.ru/"
+                method="get"
               >
-              <input
-                type="search"
-                class="field"
-                placeholder="Поиск по сайту"
-                name="search-device"
-                id="search-device"
-                required
-              />
-              <button class="button-search" type="submit">
-                <span>Найти</span>
-              </button>
-            </form>
-          </div>
+                <label class="visually-hidden" for="search-device" hidden
+                  >Device</label
+                >
+                <input
+                  type="search"
+                  class="field"
+                  placeholder="Поиск по сайту"
+                  name="search-device"
+                  id="search-device"
+                  required
+                />
+                <button class="button-search" type="submit">
+                  <span>Найти</span>
+                </button>
+              </form>
+            </div>
 
-        <ul class="user-navigation-list-catalog">
-          <li class="user-navigation-item">
-            <a class="user-navigation-link" href="#">Коля Петухов </a>
-          </li>
-          <li class="user-navigation-item">
-            <a class="user-navigation-link user-navigation-link-pale" href="#">
-              Выйти
+            <ul class="user-navigation-list-catalog">
+              <li class="user-navigation-item">
+                <a class="user-navigation-link" href="#">Коля Петухов </a>
+              </li>
+              <li class="user-navigation-item">
+                <a
+                  class="user-navigation-link user-navigation-link-pale"
+                  href="#"
+                >
+                  Выйти
+                </a>
+              </li>
+              <li class="user-navigation-item">
+                <a class="user-navigation-link" href="#">Сравнить </a>
+              </li>
+              <li class="user-navigation-item">
+                <a class="user-navigation-link" href="#">Корзина </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Main navigation -->
+          <nav class="main-navigation">
+            <a class="main-navigation-catalog-link" href="catalog.html">
+              <p class="items-catalog">Каталог товаров</p>
             </a>
-          </li>
-          <li class="user-navigation-item">
-            <a class="user-navigation-link" href="#">Сравнить </a>
-          </li>
-          <li class="user-navigation-item">
-            <a class="user-navigation-link" href="#">Корзина </a>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- Main navigation -->
-      <nav class="main-navigation">
-        <a class="catalog-link" href="catalog.html">
-          <p class="items-catalog">Каталог товаров</p>
-        </a>
-        <ul class="main-navigation-list">
-          <li class="main-navigation-item">
-            <a class="main-navigation-link" href="#">Доставка</a>
-          </li>
-          <li class="main-navigation-item">
-            <a class="main-navigation-link" href="#">Гарантия</a>
-          </li>
-          <li class="main-navigation-item">
-            <a class="main-navigation-link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+            <ul class="main-navigation-list">
+              <li class="main-navigation-item">
+                <a class="main-navigation-link" href="#">Доставка</a>
+              </li>
+              <li class="main-navigation-item">
+                <a class="main-navigation-link" href="#">Гарантия</a>
+              </li>
+              <li class="main-navigation-item">
+                <a class="main-navigation-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
 
     <!-- Main content -->
@@ -105,13 +111,13 @@
             <h2>Фильтр:</h2>
 
             <form
-                action="https://echo.htmlacademy.ru/"
-                class="catalog-filter"
-                method="get">
-
+              action="https://echo.htmlacademy.ru/"
+              class="catalog-filter"
+              method="get"
+            >
               <fieldset class="price">
-                  <p class="price-title">Стоимость</p>
-                  <p>от 0 до 5000</p>
+                <p class="price-title">Стоимость</p>
+                <p>от 0 до 5000</p>
               </fieldset>
 
               <fieldset class="catalog-filter-group">
@@ -168,30 +174,30 @@
               </fieldset>
 
               <fieldset class="catalog-filter-group">
-                  <p class="catalog-filter-title">Bluetooth</p>
-                  <ul class="catalog-filter-list">
-                    <li class="catalog-filter-item">
-                      <label for="" class="control-label">
-                        <input
-                          name="bluetooth"
-                          value="with-bluetooth"
-                          type="radio"
-                          class="control-input"
-                          checked
-                        />Есть
-                      </label>
-                    </li>
-                    <li class="catalog-filter-item">
-                      <label for="" class="control-label">
-                        <input
-                          name="bluetooth"
-                          value="without-bluetooth"
-                          type="radio"
-                          class="control-input"
-                        />Нет
-                      </label>
-                    </li>
-                  </ul>
+                <p class="catalog-filter-title">Bluetooth</p>
+                <ul class="catalog-filter-list">
+                  <li class="catalog-filter-item">
+                    <label for="" class="control-label">
+                      <input
+                        name="bluetooth"
+                        value="with-bluetooth"
+                        type="radio"
+                        class="control-input"
+                        checked
+                      />Есть
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label for="" class="control-label">
+                      <input
+                        name="bluetooth"
+                        value="without-bluetooth"
+                        type="radio"
+                        class="control-input"
+                      />Нет
+                    </label>
+                  </li>
+                </ul>
               </fieldset>
 
               <button class="button-filter" type="submit">Показать</button>
@@ -292,7 +298,9 @@
               </ul>
 
               <!-- Button -->
-              <button class="button-product-list" type="submit">Загрузить ещё</button>
+              <button class="button-product-list" type="submit">
+                Загрузить ещё
+              </button>
 
               <!-- Pagination -->
               <div class="pagination">
@@ -304,8 +312,11 @@
 
                 <ul class="pagination-pages">
                   <li class="pagination-item">
-                    <a class="pagination-link-number pagination-current" href="#"
-                    >1</a>
+                    <a
+                      class="pagination-link-number pagination-current"
+                      href="#"
+                      >1</a
+                    >
                   </li>
                   <li class="pagination-item">
                     <a class="pagination-link-number" href="">2</a>
@@ -322,7 +333,6 @@
                 </ul>
 
                 <a href="#" class="pagination-link pagination-next">Вперёд</a>
-
               </div>
             </section>
           </div>
@@ -374,10 +384,7 @@
               </a>
             </li>
             <li class="social-item">
-              <a
-                class="social-link"
-                href="https://twitter.com/htmlacademy_ru"
-              >
+              <a class="social-link" href="https://twitter.com/htmlacademy_ru">
               </a>
             </li>
           </ul>
