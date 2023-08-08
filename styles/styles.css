@@ -695,7 +695,7 @@ body {
 /* Footer Phone */
 .phone {
   /* margin: 0; */
-  margin-top: 140px;
+  padding-top: 140px;
   width: 355px;
   text-align: right;
 }
@@ -711,7 +711,7 @@ body {
 .logo-html-academy-img {
   width: 115px;
   height: 33px;
-  margin-bottom: 65px;
+  padding-bottom: 65px;
   margin-left: auto;
   display: block;
 }
