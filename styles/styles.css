@@ -113,6 +113,10 @@ body {
   margin-right: 26px;
 }
 
+.search-form {
+  display: flex;
+}
+
 .field {
   width: 257px;
   height: 40px;
@@ -125,6 +129,8 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
+  /* vertical-align: bottom; */
+  border-right: none;
 }
 
 .button-search {
@@ -140,6 +146,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
+  /* vertical-align: bottom; */
 }
 
 .user-navigation-list {
@@ -553,10 +560,10 @@ body {
   color: #444444;
 }
 
-.subscription-container {
-  /* width: 1160px;
-  margin: 0 auto; */
-}
+/* .subscription-container {
+  width: 1160px;
+  margin: 0 auto;
+} */
 
 .subscribe-text {
   display: flex;
@@ -630,16 +637,16 @@ body {
   margin: 0 auto;
   padding: 62px 0;
   display: grid;
-  grid-template-columns: 239px 444px 205px;
-  grid-template-rows: repeat(auto-fill, minmax(7px, 80px));
-  gap: 37px 135px;
+  grid-template-columns: 240px 444px 240px;
+  /* grid-template-rows: repeat(auto-fill, minmax(7px, 80px)); */
+  gap: 37px 117px;
 }
 
 .logo-yellow {
   display: block;
   width: 145px;
   height: 36px;
-  align-self: center;
+  align-self: end;
 }
 
 .footer-address {
@@ -676,9 +683,12 @@ body {
   margin: 0 auto;
   width: 150px;
   padding: 0;
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-between; */
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(3, 40px);
   list-style: none;
   grid-column: 2 / 3;
 }
