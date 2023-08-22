@@ -96,6 +96,11 @@ body {
   margin-bottom: 30px;
 }
 
+.user-navigation-list-catalog {
+  margin: 0;
+  padding: 0;
+}
+
 .user-navigation {
   color: #000000;
   font-family: "Rubik", sans-serif;
@@ -118,9 +123,10 @@ body {
 }
 
 .field {
-  width: 257px;
+  width: 359px;
   height: 40px;
   padding: 10px;
+  padding-left: 48px;
   border: 2px solid #000000;
   border-radius: 50px 0 0 50px;
   background-color: #ffe17f;
@@ -131,6 +137,12 @@ body {
   line-height: 20px;
   /* vertical-align: bottom; */
   border-right: none;
+
+  background-image: url("../images/nav-search.svg");
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: 16px;
 }
 
 .button-search {
@@ -150,13 +162,20 @@ body {
 }
 
 .user-navigation-list {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   width: 480px;
-  justify-content: flex-end;
+  /* align-content: flex-start;
+  justify-content: flex-end; */
   margin-bottom: 30px;
   list-style: none;
+}
+
+.navigation-icon {
+  padding-right: 12px;
 }
 
 .main-navigation-item {
@@ -168,6 +187,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 510px;
+  list-style: none;
 }
 
 .enter {
@@ -182,6 +202,17 @@ body {
   text-decoration: none;
   min-width: 105px;
   min-height: 30px;
+}
+
+.user-navigation-link.basket {
+  display: block;
+  width: 110px;
+  background-image: url("../images/nav-basket+number.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 31px 21px;
+  padding-left: 40px;
+  margin-left: 50px;
 }
 
 /* Main navigation */
@@ -207,9 +238,15 @@ body {
 }
 
 .items-catalog {
+  width: 293px;
   text-decoration: none;
   color: #000000;
   letter-spacing: 3.6px;
+  background-image: url(../images/circle-plus.svg);
+  display: block;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 50px 50px;
 }
 
 .main-navigation-list {
@@ -457,6 +494,37 @@ body {
   margin-top: 75px;
 }
 
+/* .services-slider-item {
+  width: 694px;
+  background-position: right;
+} */
+
+.services-slider-item.slider-delivery {
+  width: 694px;
+  background-image: url("../images/services-slider-1.svg");
+  background-repeat: no-repeat;
+  background-size: 136px 164px;
+  background-position: right;
+  margin-bottom: 20px;
+}
+
+.services-slider-item.slider-garanty {
+  width: 729px;
+  background-image: url("../images/services-slider-2.svg");
+  background-repeat: no-repeat;
+  background-size: 171px 195px;
+  background-position: right;
+  margin-bottom: 20px;
+}
+
+.services-slider-item.slider-credit {
+  width: 729px;
+  background-image: url("../images/services-slider-3.svg");
+  background-repeat: no-repeat;
+  background-size: 171px 195px;
+  background-position: right;
+}
+
 .services-slider-title {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
@@ -473,9 +541,23 @@ body {
   font-weight: 400;
   line-height: 30px;
   color: #444444;
+  width: 452px;
 }
 
 /* Delivery Button */
+.delivery-rare-item.container {
+  display: flex;
+}
+
+.rare-item-icon {
+  width: 47px;
+  height: 31px;
+  background-color: #ffe17f;
+  background-repeat: no-repeat;
+  background-size: 125px 100px;
+  padding: 35px 39px 34px 39px;
+}
+
 .delivery-rare-item {
   /* background-color: #f0f0f0;
   margin: 0 auto;
@@ -493,6 +575,9 @@ body {
   letter-spacing: 4px;
   text-transform: uppercase;
   color: #000000;
+  padding-top: 38px;
+  padding-bottom: 38px;
+  border: none;
 }
 
 /* About us */
@@ -526,6 +611,16 @@ body {
   line-height: 20px;
   letter-spacing: -0.36px;
   color: #000000;
+  margin-bottom: 19px;
+}
+
+.delivery-companies {
+  list-style-type: none;
+  padding: 0;
+}
+
+.delivery-companies-yellow-circle {
+  padding: 6px 26px 6px 0;
 }
 
 .more-about-us,
@@ -622,6 +717,10 @@ body {
   margin-bottom: 69.5px;
 }
 
+.green-sign {
+  padding-right: 16px;
+}
+
 /* Footer */
 .main-footer {
   background-color: #444444;
@@ -693,10 +792,25 @@ body {
   grid-column: 2 / 3;
 }
 
-.social-item {
+.social-item:first-child {
+  display: block;
   width: 40px;
   height: 40px;
-  background-color: #ffe17f;
+  background-image: url("../images/icon-telegram.svg");
+}
+
+.social-item:last-child {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/icon-twitter.svg");
+}
+
+.social-item {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/icon-youtube.svg");
 }
 
 .contacts-phone-footer {
@@ -845,6 +959,8 @@ body {
   line-height: 20px;
   color: #000000;
   text-decoration: none;
+
+  display: block;
 }
 
 /* Catalog Container */
@@ -902,25 +1018,50 @@ body {
 
 .price {
   margin-bottom: 35px;
+  border: none;
+  border-top: 2px solid #000000;
 }
 
-.price p:last-child {
-  font-family: "Rubik", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  opacity: 0.3;
-  color: #000000;
+.range-slider {
+  transform: translate(-20px);
 }
 
+/* Color */
 .catalog-filter-group {
   margin-bottom: 35px;
+  border: none;
+  border-top: 2px solid #000000;
 }
 
 .catalog-filter-list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.control-input {
+  display: none;
+}
+
+.catalog-filter-item {
+  padding-bottom: 17px;
+}
+
+.catalog-filter-item:last-child {
+  padding-bottom: 0;
+}
+
+.catalog-filter-item.checked {
+  display: block;
+  background-image: url(../images/checkbox-black.svg);
+  /* background-position: left; */
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  padding-left: 36px;
+}
+
+.non-checked {
+  margin-right: 16px;
 }
 
 .button-filter {
@@ -931,6 +1072,10 @@ body {
   letter-spacing: 3.6px;
   text-transform: uppercase;
   color: #000000;
+}
+
+.radio {
+  padding-right: 16px;
 }
 
 /* Sorting */
@@ -963,20 +1108,22 @@ body {
   font-weight: 400;
   line-height: 30px;
   color: #000000;
+  border: none;
+  background-color: #f0f0f0;
 }
 
 .sort-list {
+  width: 60px;
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-  width: 60px;
+  align-items: flex-end;
 }
 
 .sort-item {
   width: 30px;
   height: 30px;
-  background-color: #ffe17f;
 }
 
 .sort-item-link {
