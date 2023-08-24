@@ -183,7 +183,7 @@ body {
   margin-bottom: auto;
 }
 
-.user-navigation-list-catalog {
+.user-navigation-list-catalog.catalog {
   display: flex;
   justify-content: space-between;
   width: 510px;
@@ -212,7 +212,7 @@ body {
   background-repeat: no-repeat;
   background-size: 31px 21px;
   padding-left: 40px;
-  margin-left: 50px;
+  margin-left: auto;
 }
 
 /* Main navigation */
@@ -247,6 +247,8 @@ body {
   background-repeat: no-repeat;
   background-position: right;
   background-size: 50px 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .main-navigation-list {
@@ -459,7 +461,16 @@ body {
   display: flex;
   flex-direction: column;
   width: 280px;
+  /* position: relative; */
+  border-right: 7px solid #000000;
+  margin-right: 116px;
 }
+
+/* .services-list::after {
+  content: "";
+  position: absolute;
+  border-right: 7px solid #000000;
+} */
 
 .services-item {
   justify-content: space-between;
@@ -484,6 +495,8 @@ body {
 .services-link-current {
   color: #ffe17f;
   background-color: #000000;
+  width: 280px;
+  padding: 9px 120px 11px 0;
 }
 
 /* Services Slider */
@@ -515,6 +528,8 @@ body {
   background-size: 171px 195px;
   background-position: right;
   margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .services-slider-item.slider-credit {
@@ -632,6 +647,12 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+  width: 270px;
+  height: 40px;
+  padding: 10px 6px;
+
+  background-color: #ffe17f;
+  background-size: 270px 8px;
 }
 
 .contacts h4 {
@@ -1207,15 +1228,19 @@ body {
   text-transform: uppercase;
   color: #000000;
   margin-bottom: 44px;
-  background-color: #f0f0f0;
+  background-color: #ffffff;
+  border: 3px solid #e5e5e5;
+  padding: 18px 39px;
 }
 
 /* Pagination */
 .pagination {
   margin: 0 auto;
-  width: 760px;
+  width: 710px;
   display: flex;
   justify-content: space-between;
+  background-color: #ebebeb;
+  padding: 25px;
 }
 
 /* .pagination-list {
