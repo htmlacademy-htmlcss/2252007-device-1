@@ -27,17 +27,21 @@
                 action="https://echo.htmlacademy.ru/"
                 method="get"
               >
-                <label class="visually-hidden" for="search-device"
-                  >Device</label
+                <label
+                  class="search-label search-label-catalog"
+                  for="search-device"
                 >
-                <input
-                  type="search"
-                  class="field"
-                  placeholder="Поиск по сайту"
-                  name="search-device"
-                  id="search-device"
-                  required
-                />
+                  <span class="visually-hidden">Device</span>
+                  <input
+                    type="search"
+                    class="field"
+                    placeholder="Поиск по сайту"
+                    name="search-device"
+                    id="search-device"
+                    required
+                  />
+                </label>
+
                 <button class="button-search" type="submit">
                   <span>Найти</span>
                 </button>
@@ -125,6 +129,33 @@
           <nav class="main-navigation">
             <a class="main-navigation-catalog-link" href="catalog.html">
               <p class="items-catalog">Каталог товаров</p>
+              <span class="items-catalog-icon-circle">
+                <svg
+                  class="items-catalog-icon-plus"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="17"
+                  viewBox="0 0 16 17"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_1_64)">
+                    <path
+                      d="M16 7.78699H9V0.786987H7V7.78699H0V9.78699H7V16.787H9V9.78699H16V7.78699Z"
+                      fill="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_64">
+                      <rect
+                        width="16"
+                        height="16"
+                        fill="white"
+                        transform="translate(0 0.786987)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
             </a>
             <ul class="main-navigation-list">
               <li class="main-navigation-item">
@@ -370,11 +401,11 @@
                       viewBox="0 0 12 10"
                       fill="none"
                     >
-                      <g clip-path="url(#clip0_45973_678)">
+                      <g opacity="0.2" clip-path="url(#clip0_11478_2970)">
                         <path d="M6 0L11.5 10H0.5" fill="black" />
                       </g>
                       <defs>
-                        <clipPath id="clip0_45973_678">
+                        <clipPath id="clip0_11478_2970">
                           <rect
                             width="11"
                             height="10"
@@ -394,7 +425,7 @@
                       viewBox="0 0 12 10"
                       fill="none"
                     >
-                      <g clip-path="url(#clip0_45973_681)">
+                      <g opacity="0.2" clip-path="url(#clip0_45973_681)">
                         <path
                           d="M6 10L0.499999 9.61651e-07L11.5 0"
                           fill="black"
