@@ -197,179 +197,155 @@
           <section class="filter">
             <h2>Фильтр:</h2>
 
+            <!-- Form  -->
             <form
               action="https://echo.htmlacademy.ru/"
               class="catalog-filter"
               method="get"
             >
+              <!-- Fieldset -->
               <fieldset class="price">
                 <p class="price-title">Стоимость</p>
-                <img
-                  class="range-slider"
-                  src="images/range-slider.svg"
-                  alt="Вариация цены."
-                  width="200"
-                  height="43"
-                />
+
+                <!-- Div -->
+
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar">
+                      <!-- Button round -->
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden"
+                          >Изменить минимальную цену.</span
+                        >
+                      </button>
+                      <!-- Button round -->
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden"
+                          >Изменить максимальную цену.</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Price -->
+                  <div class="range-wrapper-inputs">
+                    <label for="" class="catalog-filter-label">
+                      от
+                      <input
+                        type="number"
+                        class="range-input"
+                        value="0"
+                        name="min-price"
+                      />
+                    </label>
+
+                    <label for="" class="catalog-filter-label"
+                      >до
+                      <input
+                        type="number"
+                        class="range-input"
+                        value="5000"
+                        name="max-price"
+                    /></label>
+                  </div>
+                </div>
               </fieldset>
 
+              <!-- Colors -->
               <fieldset class="catalog-filter-group">
                 <p class="catalog-filter-title">Цвет</p>
+
+                <!-- Checkbox List -->
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item checked">
-                    <label for="" class="control-label">
+                    <label for="" class="control">
                       <input
                         name="color-black"
                         type="checkbox"
-                        class="control-input"
+                        class="visually-hidden control-input"
                         checked
-                      />Черный
+                      />
+                      <span class="control-mark"></span>
+                      <span class="control-label">Черный</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item checked">
-                    <label for="" class="control-label">
+                    <label for="" class="control">
                       <input
                         name="color-white"
                         type="checkbox"
-                        class="control-input"
+                        class="visually-hidden control-input"
                         checked
-                      />Белый
+                      />
+                      <span class="control-mark"></span>
+                      <span class="control-label">Белый</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label for="" class="control-label">
+                    <label for="" class="control">
                       <input
                         name="color-blue"
                         type="checkbox"
-                        class="control-input"
-                      /><svg
-                        class="non-checked"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
-                        fill="none"
-                      >
-                        <rect
-                          x="1"
-                          y="1"
-                          width="18"
-                          height="18"
-                          rx="2"
-                          stroke="#CCCCCC"
-                          stroke-width="2"
-                        /></svg
-                      >Синий
+                        class="visually-hidden control-input"
+                      />
+                      <span class="control-mark"></span>
+                      <span class="control-label">Синий</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label for="" class="control-label">
+                    <label for="" class="control">
                       <input
                         name="color-red"
                         type="checkbox"
-                        class="control-input"
-                      /><svg
-                        class="non-checked"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
-                        fill="none"
-                      >
-                        <rect
-                          x="1"
-                          y="1"
-                          width="18"
-                          height="18"
-                          rx="2"
-                          stroke="#CCCCCC"
-                          stroke-width="2"
-                        /></svg
-                      >Красный
+                        class="visually-hidden control-input"
+                      />
+                      <span class="control-mark"></span>
+                      <span class="control-label">Красный</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label for="" class="control-label">
+                    <label for="" class="control">
                       <input
                         name="color-pink"
                         type="checkbox"
-                        class="control-input"
-                      /><svg
-                        class="non-checked"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
-                        fill="none"
-                      >
-                        <rect
-                          x="1"
-                          y="1"
-                          width="18"
-                          height="18"
-                          rx="2"
-                          stroke="#CCCCCC"
-                          stroke-width="2"
-                        /></svg
-                      >Розовый
+                        class="visually-hidden control-input"
+                      />
+                      <span class="control-mark"></span>
+                      <span class="control-label">Розовый</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
 
+              <!-- Radio List -->
               <fieldset class="catalog-filter-group">
                 <p class="catalog-filter-title">Bluetooth</p>
+
+                <!-- List -->
                 <ul class="catalog-filter-list">
-                  <li class="catalog-filter-item">
-                    <label for="" class="control-label">
+                  <li class="catalog-filter-item checked-radio">
+                    <label for="" class="control">
                       <input
                         name="bluetooth"
                         value="with-bluetooth"
                         type="radio"
                         class="control-input"
                         checked
-                      /><svg
-                        class="radio"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
-                        fill="none"
-                      >
-                        <circle
-                          cx="10"
-                          cy="10"
-                          r="9"
-                          stroke="black"
-                          stroke-width="2"
-                        />
-                        <circle cx="10" cy="10" r="4" fill="black" /></svg
-                      >Есть
+                      />
+                      <span class="control-mark"></span>
+                      <span class="control-label">Есть</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label for="" class="control-label">
+                    <label for="" class="control">
                       <input
                         name="bluetooth"
                         value="without-bluetooth"
                         type="radio"
                         class="control-input"
-                      /><svg
-                        class="radio"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
-                        fill="none"
-                      >
-                        <circle
-                          cx="10"
-                          cy="10"
-                          r="9"
-                          stroke="#CCCCCC"
-                          stroke-width="2"
-                        /></svg
-                      >Нет
+                      />
+                      <span class="control-mark"></span>
+                      <span class="control-label">Нет</span>
                     </label>
                   </li>
                 </ul>
@@ -401,7 +377,7 @@
                       viewBox="0 0 12 10"
                       fill="none"
                     >
-                      <g opacity="0.2" clip-path="url(#clip0_11478_2970)">
+                      <g clip-path="url(#clip0_11478_2970)">
                         <path d="M6 0L11.5 10H0.5" fill="black" />
                       </g>
                       <defs>
@@ -425,7 +401,7 @@
                       viewBox="0 0 12 10"
                       fill="none"
                     >
-                      <g opacity="0.2" clip-path="url(#clip0_45973_681)">
+                      <g clip-path="url(#clip0_45973_681)">
                         <path
                           d="M6 10L0.499999 9.61651e-07L11.5 0"
                           fill="black"
