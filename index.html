@@ -116,13 +116,17 @@
                     <!-- <h2 class="popover-title">Корзина</h2> -->
                     <ul class="cart-item-list">
                       <li class="cart-item">
-                        <img
-                          src="images/product-1.jpg"
-                          alt="Любительская селфи-палка."
-                          width="39px"
-                          height="43px"
-                        />
-                        <p class="cart-item-title">Любительская селфи-палка</p>
+                        <a href="#" class="popover-cart-item">
+                          <img
+                            src="images/product-1.jpg"
+                            alt="Любительская селфи-палка."
+                            width="39px"
+                            height="43px"
+                          />
+                          <p class="cart-item-title">
+                            Любительская селфи-палка
+                          </p>
+                        </a>
                         <button class="cart-item-button button" type="button">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -143,16 +147,18 @@
                       </li>
 
                       <li class="cart-item">
-                        <img
-                          src="images/product-2.jpg"
-                          alt="Профессиональная
+                        <a href="#" class="popover-cart-item">
+                          <img
+                            src="images/product-2.jpg"
+                            alt="Профессиональная
                           селфи-палка."
-                          width="39px"
-                          height="43px"
-                        />
-                        <p class="cart-item-title">
-                          Профессиональная селфи-палка
-                        </p>
+                            width="39px"
+                            height="43px"
+                          />
+                          <p class="cart-item-title">
+                            Профессиональная селфи-палка
+                          </p>
+                        </a>
                         <button class="cart-item-button button" type="button">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -178,9 +184,9 @@
                         <p class="sum-money">Сумма: 2000 ₽</p>
                       </div>
                     </div>
-                    <button class="cart-button-open-cart" type="button">
-                      Открыть корзину
-                    </button>
+                    <a href="#" class="open-cart-button">
+                      <p class="open-cart-button-text">Открыть корзину</p>
+                    </a>
                   </div>
                 </div>
               </li>
@@ -626,106 +632,6 @@
         </button>
       </div>
 
-      <!-- Modal Window -->
-      <div class="modal-container">
-        <div class="modal modal-delivery">
-          <button class="modal-close-button">
-            <span class="visually-hidden">Закрыть</span>
-          </button>
-          <section class="modal-content">
-            <h2 class="modal-title">Доставка под заказ</h2>
-            <form
-              action="https://echo.htmlacademy.ru/"
-              method="post"
-              class="delivery-form"
-            >
-              <div class="row">
-                <p class="field-group-1">
-                  <label for="client-name" class="item-title">Ваше имя:</label>
-                  <input
-                    type="text"
-                    class="delivery-form-field field-delivery field-name"
-                    id="client-name"
-                    name="client-name"
-                    placeholder="Введите имя"
-                  />
-
-                  <span class="comment">Добавьте имя</span>
-                </p>
-
-                <p class="field-group-2">
-                  <label for="client-email" class="item-title"
-                    >Ваш e-mail:</label
-                  >
-                  <input
-                    type="email"
-                    class="delivery-form-field field-delivery field-email"
-                    id="client-email"
-                    name="client-email"
-                    placeholder="почта"
-                  />
-                  <span class="comment-2">Забавный у вас адрес</span>
-                </p>
-              </div>
-
-              <div class="row">
-                <p class="field-group-3">
-                  <label for="goods" class="item-title"
-                    >Что нужно привезти:</label
-                  >
-                  <input
-                    type="email"
-                    class="delivery-form-field field-delivery"
-                    id="goods"
-                    name="goods"
-                    placeholder="В свободной форме"
-                  />
-                </p>
-
-                <p class="field-group-4">
-                  <span class="item-title">
-                    <label class="item-title" for="quantity">Количество:</label>
-                    <span class="tooltip">
-                      <button class="tooltip-toggle" type="button">
-                        <svg
-                          class="tooltip-icon"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="4"
-                          height="12"
-                          viewBox="0 0 4 12"
-                          fill="none"
-                        >
-                          <path d="M3 0H1V2H3V0Z" fill="black" />
-                          <path d="M3 4H1V12H3V4Z" fill="black" />
-                        </svg>
-                      </button>
-                      <span class="tooltip-text"
-                        >Постараемся найти, сколько нужно. Привезём сколько
-                        получится по требованиям к провозу багажа.</span
-                      >
-                    </span>
-                  </span>
-                  <input
-                    type="email"
-                    class="delivery-form-field field-delivery field-delivery-quantity"
-                    id="quantity"
-                    name="quantity"
-                    placeholder="1"
-                  />
-                </p>
-              </div>
-
-              <button
-                class="button delivery-form-button button-yellow"
-                type="submit"
-              >
-                <span>Отправить</span>
-              </button>
-            </form>
-          </section>
-        </div>
-      </div>
-
       <!-- About us -->
       <div class="about-us-contacts container">
         <section class="about-us">
@@ -1023,6 +929,117 @@
           <!-- </section> -->
         </div>
       </footer>
+
+      <!-- Modal Window -->
+      <div class="modal-container">
+        <div class="modal modal-delivery">
+          <section class="modal-content">
+            <div class="modal-title-close-button">
+              <h2 class="modal-title">Доставка под заказ</h2>
+              <button class="modal-close-button">
+                <span class="visually-hidden">Закрыть</span>
+              </button>
+            </div>
+            <!-- Form -->
+            <form
+              action="https://echo.htmlacademy.ru/"
+              method="post"
+              class="delivery-form"
+            >
+              <div class="form-row">
+                <p class="field-group field-group-1">
+                  <label for="client-name" class="modal-item-title"
+                    >Ваше имя:</label
+                  >
+                  <input
+                    type="text"
+                    class="delivery-form-field field-name"
+                    id="client-name"
+                    name="client-name"
+                    placeholder="Введите имя"
+                  />
+                  <span class="comment">Добавьте имя</span>
+                </p>
+
+                <p class="field-group field-group-2">
+                  <label for="client-email" class="modal-item-title"
+                    >Ваш e-mail:</label
+                  >
+                  <input
+                    type="email"
+                    class="delivery-form-field field-email"
+                    id="client-email"
+                    name="client-email"
+                    placeholder="почта"
+                  />
+                  <span class="comment">Забавный у вас адрес</span>
+                </p>
+              </div>
+
+              <div class="form-row">
+                <p class="field-group field-group-3">
+                  <label for="goods" class="modal-item-title"
+                    >Что нужно привезти:</label
+                  >
+                  <input
+                    type="text"
+                    class="delivery-form-field"
+                    id="goods"
+                    name="goods"
+                    placeholder="В свободной форме"
+                  />
+                </p>
+
+                <!-- Quantity -->
+                <p class="field-group field-group-4">
+                  <!-- Tooltip -->
+                  <span class="tooltip-title">
+                    <label for="quantity" class="tooltip-item-title"
+                      >Количество:</label
+                    >
+                    <span class="tooltip">
+                      <button class="tooltip-toggle" type="button">
+                        <svg
+                          class="tooltip-icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="4"
+                          height="12"
+                          viewBox="0 0 4 12"
+                          fill="none"
+                        >
+                          <path d="M3 0H1V2H3V0Z" fill="black" />
+                          <path d="M3 4H1V12H3V4Z" fill="black" />
+                        </svg>
+                      </button>
+                      <span class="tooltip-text">
+                        Постараемся найти, сколько нужно. Привезём сколько
+                        получится по требованиям к провозу багажа.</span
+                      >
+                    </span>
+                  </span>
+
+                  <!--  -->
+
+                  <input
+                    type="number"
+                    class="field-delivery-quantity"
+                    id="quantity-number"
+                    name="quantity-number"
+                    placeholder="1"
+                  />
+                </p>
+              </div>
+
+              <button
+                class="button delivery-form-button button-yellow"
+                type="submit"
+              >
+                <span>Отправить</span>
+              </button>
+            </form>
+          </section>
+        </div>
+      </div>
     </main>
   </body>
 </html>
