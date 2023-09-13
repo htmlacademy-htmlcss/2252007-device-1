@@ -197,34 +197,76 @@
           <nav class="main-navigation">
             <a class="main-navigation-catalog-link" href="catalog.html">
               <p class="items-catalog">Каталог товаров</p>
-              <span class="items-catalog-icon-circle">
-                <svg
-                  class="items-catalog-icon-plus"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="17"
-                  viewBox="0 0 16 17"
-                  fill="none"
-                >
-                  <g clip-path="url(#clip0_1_64)">
-                    <path
-                      d="M16 7.78699H9V0.786987H7V7.78699H0V9.78699H7V16.787H9V9.78699H16V7.78699Z"
-                      fill="black"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_1_64">
-                      <rect
-                        width="16"
-                        height="16"
-                        fill="white"
-                        transform="translate(0 0.786987)"
-                      />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </span>
+
+
+              <!-- Main Navigation Tooltip Catalog -->
+              <div class="main-navigation-tooltip-container">
+                <span class="main-navigation-tooltip">
+                  <!-- <div class="items-catalog-icon-circle">
+                    <svg
+                      class="items-catalog-icon-plus"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="17"
+                      viewBox="0 0 16 17"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_1_64)">
+                        <path
+                          d="M16 7.78699H9V0.786987H7V7.78699H0V9.78699H7V16.787H9V9.78699H16V7.78699Z"
+                          fill="black"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_64">
+                          <rect
+                            width="16"
+                            height="16"
+                            fill="white"
+                            transform="translate(0 0.786987)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div> -->
+
+                  <!-- Tooltip Catalog List -->
+                  <ul class="tooltip-catalog-list">
+                    <li class="tooltip-catalog-list-item">
+                      <a href="#" class="tooltip-catalog-link">
+                        <p class="toltip-catalog-title-1">Виртуальная реальность</p>
+                      </a>
+                    </li>
+                    <li class="tooltip-catalog-list-item">
+                      <a href="#" class="tooltip-catalog-link">
+                        <p class="toltip-catalog-title-2">Моноподы для cелфи</p>
+                      </a>
+                    </li>
+                    <li class="tooltip-catalog-list-item">
+                      <a href="#" class="tooltip-catalog-link">
+                        <p class="toltip-catalog-title-3">Экшн-камеры</p>
+                      </a>
+                    </li>
+                    <li class="tooltip-catalog-list-item">
+                      <a href="#" class="tooltip-catalog-link">
+                        <p class="toltip-catalog-title-4">Фитнес-браслеты</p>
+                      </a>
+                    </li>
+                    <li class="tooltip-catalog-list-item">
+                      <a href="#" class="tooltip-catalog-link">
+                        <p class="toltip-catalog-title-5">Умные часы</p>
+                      </a>
+                    </li>
+                    <li class="tooltip-catalog-list-item">
+                      <a href="#" class="tooltip-catalog-link">
+                        <p class="toltip-catalog-title-6">Квадрокоптеры</p>
+                      </a>
+                    </li>
+                  </ul>
+                </span>
+              </div>
             </a>
+
             <ul class="main-navigation-list">
               <li class="main-navigation-item">
                 <a class="main-navigation-link" href="#">Доставка</a>
@@ -1018,15 +1060,37 @@
                     </span>
                   </span>
 
-                  <!--  -->
+                  <!-- Minus & Plus -->
 
-                  <input
-                    type="number"
-                    class="field-delivery-quantity"
-                    id="quantity-number"
-                    name="quantity-number"
-                    placeholder="1"
-                  />
+                  <div class="quantity">
+                    <button class="minus" type="button">
+                      <svg class="minus-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M16 7H0V9H16V7Z" fill="black"/>
+                        </svg>
+                    </button>
+
+                    <input
+                      type="number"
+                      class="field-delivery-quantity"
+                      id="quantity-number"
+                      name="quantity-number"
+                      placeholder="1"/>
+                    <button class="plus" type="button">
+                      <svg class="plus-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <g clip-path="url(#clip0_46504_485)">
+                        <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_46504_485">
+                        <rect width="16" height="16" fill="white"/>
+                        </clipPath>
+                        </defs>
+                      </svg>
+
+                    </button>
+
+                  </div>
+
                 </p>
               </div>
 
