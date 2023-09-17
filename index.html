@@ -197,75 +197,91 @@
           <nav class="main-navigation">
             <a class="main-navigation-catalog-link" href="catalog.html">
               <p class="items-catalog">Каталог товаров</p>
+              <button class="items-catalog-icon-circle" type="button">
+                <!-- <svg
+                  class="items-catalog-icon-plus"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path d="M16 7H0V9H16V7Z" fill="black" />
+                </svg> -->
 
-
-              <!-- Main Navigation Tooltip Catalog -->
-              <div class="main-navigation-tooltip-container">
-                <span class="main-navigation-tooltip">
-                  <!-- <div class="items-catalog-icon-circle">
-                    <svg
-                      class="items-catalog-icon-plus"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="17"
-                      viewBox="0 0 16 17"
-                      fill="none"
-                    >
-                      <g clip-path="url(#clip0_1_64)">
-                        <path
-                          d="M16 7.78699H9V0.786987H7V7.78699H0V9.78699H7V16.787H9V9.78699H16V7.78699Z"
-                          fill="black"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_1_64">
-                          <rect
-                            width="16"
-                            height="16"
-                            fill="white"
-                            transform="translate(0 0.786987)"
-                          />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </div> -->
-
-                  <!-- Tooltip Catalog List -->
-                  <ul class="tooltip-catalog-list">
-                    <li class="tooltip-catalog-list-item">
-                      <a href="#" class="tooltip-catalog-link">
-                        <p class="toltip-catalog-title-1">Виртуальная реальность</p>
-                      </a>
-                    </li>
-                    <li class="tooltip-catalog-list-item">
-                      <a href="#" class="tooltip-catalog-link">
-                        <p class="toltip-catalog-title-2">Моноподы для cелфи</p>
-                      </a>
-                    </li>
-                    <li class="tooltip-catalog-list-item">
-                      <a href="#" class="tooltip-catalog-link">
-                        <p class="toltip-catalog-title-3">Экшн-камеры</p>
-                      </a>
-                    </li>
-                    <li class="tooltip-catalog-list-item">
-                      <a href="#" class="tooltip-catalog-link">
-                        <p class="toltip-catalog-title-4">Фитнес-браслеты</p>
-                      </a>
-                    </li>
-                    <li class="tooltip-catalog-list-item">
-                      <a href="#" class="tooltip-catalog-link">
-                        <p class="toltip-catalog-title-5">Умные часы</p>
-                      </a>
-                    </li>
-                    <li class="tooltip-catalog-list-item">
-                      <a href="#" class="tooltip-catalog-link">
-                        <p class="toltip-catalog-title-6">Квадрокоптеры</p>
-                      </a>
-                    </li>
-                  </ul>
-                </span>
-              </div>
+                <!-- Plus -->
+                <svg
+                  class="items-catalog-icon-plus"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="17"
+                  viewBox="0 0 16 17"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_1_64)">
+                    <path
+                      d="M16 7.78699H9V0.786987H7V7.78699H0V9.78699H7V16.787H9V9.78699H16V7.78699Z"
+                      fill="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_64">
+                      <rect
+                        width="16"
+                        height="16"
+                        fill="white"
+                        transform="translate(0 0.786987)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
             </a>
+
+            <!-- Main Navigation Tooltip Catalog -->
+            <div class="main-navigation-tooltip-container">
+              <span class="main-navigation-tooltip">
+                <!-- Tooltip Catalog List -->
+                <ul class="tooltip-catalog-list-1">
+                  <li class="tooltip-catalog-list-item">
+                    <a href="#" class="tooltip-catalog-link">
+                      <p class="toltip-catalog-title">Виртуальная реальность</p>
+                    </a>
+                  </li>
+                  <li class="tooltip-catalog-list-item">
+                    <a href="#" class="tooltip-catalog-link">
+                      <p class="toltip-catalog-title">Моноподы для cелфи</p>
+                    </a>
+                  </li>
+                  <li class="tooltip-catalog-list-item">
+                    <a href="#" class="tooltip-catalog-link">
+                      <p class="toltip-catalog-title">Экшн-камеры</p>
+                    </a>
+                  </li>
+                </ul>
+
+                <ul class="tooltip-catalog-list-2">
+                  <li class="tooltip-catalog-list-item">
+                    <a href="#" class="tooltip-catalog-link">
+                      <p class="toltip-catalog-title">Фитнес-браслеты</p>
+                    </a>
+                  </li>
+                  <li class="tooltip-catalog-list-item">
+                    <a href="#" class="tooltip-catalog-link">
+                      <p class="toltip-catalog-title">Умные часы</p>
+                    </a>
+                  </li>
+                </ul>
+
+                <ul class="tooltip-catalog-list-3">
+                  <li class="tooltip-catalog-list-item">
+                    <a href="#" class="tooltip-catalog-link">
+                      <p class="toltip-catalog-title-6">Квадрокоптеры</p>
+                    </a>
+                  </li>
+                </ul>
+              </span>
+            </div>
 
             <ul class="main-navigation-list">
               <li class="main-navigation-item">
@@ -978,7 +994,7 @@
           <section class="modal-content">
             <div class="modal-title-close-button">
               <h2 class="modal-title">Доставка под заказ</h2>
-              <button class="modal-close-button">
+              <button class="modal-close-button" type="button">
                 <span class="visually-hidden">Закрыть</span>
               </button>
             </div>
@@ -993,28 +1009,37 @@
                   <label for="client-name" class="modal-item-title"
                     >Ваше имя:</label
                   >
-                  <input
-                    type="text"
-                    class="delivery-form-field field-name"
-                    id="client-name"
-                    name="client-name"
-                    placeholder="Введите имя"
-                  />
-                  <span class="comment">Добавьте имя</span>
+                  <span class="delivery-form-label" for="client-name">
+                    <input
+                      type="text"
+                      class="delivery-form-field field-name invalid"
+                      id="client-name"
+                      name="client-name"
+                      placeholder="Введите имя"
+                    />
+                  </span>
+
+                  <!-- При добавлении класса invalid для input - будет состояние ошибки -->
+                  <span class="comment invalid-text">Добавьте имя</span>
+                  <!-- При добавлении класса invalid-text для span - будет состояние ошибки -->
                 </p>
 
                 <p class="field-group field-group-2">
                   <label for="client-email" class="modal-item-title"
                     >Ваш e-mail:</label
                   >
-                  <input
-                    type="email"
-                    class="delivery-form-field field-email"
-                    id="client-email"
-                    name="client-email"
-                    placeholder="почта"
-                  />
-                  <span class="comment">Забавный у вас адрес</span>
+                  <label for="client-email" class="delivery-form-label">
+                    <input
+                      type="email"
+                      class="delivery-form-field field-email invalid"
+                      id="client-email"
+                      name="client-email"
+                      placeholder="Введите e-mail"
+                    />
+                  </label>
+                  <!-- При добавлении класса invalid для input - будет состояние ошибки -->
+                  <span class="comment invalid-text">Забавный у вас адрес</span>
+                  <!-- При добавлении класса invalid-text для span - будет состояние ошибки -->
                 </p>
               </div>
 
@@ -1023,20 +1048,22 @@
                   <label for="goods" class="modal-item-title"
                     >Что нужно привезти:</label
                   >
-                  <input
-                    type="text"
-                    class="delivery-form-field"
-                    id="goods"
-                    name="goods"
-                    placeholder="В свободной форме"
-                  />
+                  <label for="goods" class="delivery-form-label">
+                    <input
+                      type="text"
+                      class="delivery-form-field"
+                      id="goods"
+                      name="goods"
+                      placeholder="В свободной форме"
+                    />
+                  </label>
                 </p>
 
                 <!-- Quantity -->
-                <p class="field-group field-group-4">
+                <div class="field-group field-group-4">
                   <!-- Tooltip -->
                   <span class="tooltip-title">
-                    <label for="quantity" class="tooltip-item-title"
+                    <label for="quantity-number" class="tooltip-item-title"
                       >Количество:</label
                     >
                     <span class="tooltip">
@@ -1062,11 +1089,19 @@
 
                   <!-- Minus & Plus -->
 
-                  <div class="quantity">
+                  <div class="quantity invalid">
+                    <!-- При добавлении класса invalid для div - будет состояние ошибки -->
                     <button class="minus" type="button">
-                      <svg class="minus-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                        <path d="M16 7H0V9H16V7Z" fill="black"/>
-                        </svg>
+                      <svg
+                        class="minus-svg"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <path d="M16 7H0V9H16V7Z" fill="black" />
+                      </svg>
                     </button>
 
                     <input
@@ -1074,24 +1109,37 @@
                       class="field-delivery-quantity"
                       id="quantity-number"
                       name="quantity-number"
-                      placeholder="1"/>
+                      value="1"
+                      <!--
+                      placeholder="1"
+                      --
+                    />
+
+                    />
                     <button class="plus" type="button">
-                      <svg class="plus-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <svg
+                        class="plus-svg"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
                         <g clip-path="url(#clip0_46504_485)">
-                        <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black"/>
+                          <path
+                            d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z"
+                            fill="black"
+                          />
                         </g>
                         <defs>
-                        <clipPath id="clip0_46504_485">
-                        <rect width="16" height="16" fill="white"/>
-                        </clipPath>
+                          <clipPath id="clip0_46504_485">
+                            <rect width="16" height="16" fill="white" />
+                          </clipPath>
                         </defs>
                       </svg>
-
                     </button>
-
                   </div>
-
-                </p>
+                </div>
               </div>
 
               <button

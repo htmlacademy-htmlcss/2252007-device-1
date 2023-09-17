@@ -213,13 +213,13 @@
                   <div class="range-scale">
                     <div class="range-bar">
                       <!-- Button round -->
-                      <button class="range-toggle toggle-min">
+                      <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden"
                           >Изменить минимальную цену.</span
                         >
                       </button>
                       <!-- Button round -->
-                      <button class="range-toggle toggle-max">
+                      <button class="range-toggle toggle-max" type="button">
                         <span class="visually-hidden"
                           >Изменить максимальную цену.</span
                         >
@@ -229,23 +229,25 @@
 
                   <!-- Price -->
                   <div class="range-wrapper-inputs">
-                    <label for="" class="catalog-filter-label">
+                    <label for="from" class="catalog-filter-label from">
                       от
                       <input
                         type="number"
                         class="range-input"
                         value="0"
                         name="min-price"
+                        id="from"
                       />
                     </label>
 
-                    <label for="" class="catalog-filter-label"
+                    <label for="till" class="catalog-filter-label till"
                       >до
                       <input
                         type="number"
                         class="range-input"
                         value="5000"
                         name="max-price"
+                        id="till"
                     /></label>
                   </div>
                 </div>
@@ -258,11 +260,12 @@
                 <!-- Checkbox List -->
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item checked">
-                    <label for="" class="control">
+                    <label for="color-black" class="control">
                       <input
                         name="color-black"
                         type="checkbox"
                         class="visually-hidden control-input"
+                        id="color-black"
                         checked
                       />
                       <span class="control-mark"></span>
@@ -270,11 +273,12 @@
                     </label>
                   </li>
                   <li class="catalog-filter-item checked">
-                    <label for="" class="control">
+                    <label for="color-white" class="control">
                       <input
                         name="color-white"
                         type="checkbox"
                         class="visually-hidden control-input"
+                        id="color-white"
                         checked
                       />
                       <span class="control-mark"></span>
@@ -282,33 +286,36 @@
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label for="" class="control">
+                    <label for="color-blue" class="control">
                       <input
                         name="color-blue"
                         type="checkbox"
                         class="visually-hidden control-input"
+                        id="color-blue"
                       />
                       <span class="control-mark"></span>
                       <span class="control-label">Синий</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label for="" class="control">
+                    <label for="color-red" class="control">
                       <input
                         name="color-red"
                         type="checkbox"
                         class="visually-hidden control-input"
+                        id="color-red"
                       />
                       <span class="control-mark"></span>
                       <span class="control-label">Красный</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label for="" class="control">
+                    <label for="color-pink" class="control">
                       <input
                         name="color-pink"
                         type="checkbox"
                         class="visually-hidden control-input"
+                        id="color-pink"
                       />
                       <span class="control-mark"></span>
                       <span class="control-label">Розовый</span>
@@ -454,6 +461,13 @@
                 <li class="product-card">
                   <div class="product-card-image-wrapper">
                     <img
+                      src="images/circle-new.svg"
+                      alt="Новинка."
+                      width="60"
+                      height="60"
+                      class="circle-new"
+                    />
+                    <img
                       src="images/product-2.jpg"
                       width="360"
                       height="380"
@@ -477,6 +491,13 @@
 
                 <li class="product-card">
                   <div class="product-card-image-wrapper">
+                    <img
+                      src="images/circle-new.svg"
+                      alt="Новинка."
+                      width="60"
+                      height="60"
+                      class="circle-new"
+                    />
                     <img
                       src="images/product-3.jpg"
                       width="360"
