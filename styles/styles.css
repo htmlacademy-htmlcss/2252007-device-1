@@ -279,19 +279,27 @@ body {
   padding-bottom: 10px;
 }
 
-.items-catalog:hover + .items-catalog-icon-circle:after {
+/* Main Navigation Wrapper */
+/* .main-navigation-catalog-link .main-navigation-tooltip-container {
+} */
+
+/* .main-navigation-catalog-link:hover + .main-navigation-tooltip-container {
+  display: block;
+} */
+
+.main-navigation-wrapper:hover .items-catalog-icon-circle::after {
   display: none;
 }
 
-.items-catalog:hover + .items-catalog-icon-circle {
+.main-navigation-wrapper:hover .items-catalog-icon-circle {
   border: 2px solid #000000;
 }
 
-.items-catalog:hover + .items-catalog-icon-circle:before {
+.main-navigation-wrapper:hover .items-catalog-icon-circle::before {
   background-color: #000000;
 }
 
-.items-catalog:hover + .main-navigation-tooltip-container {
+.main-navigation-wrapper:hover .main-navigation-tooltip-container {
   display: flex;
 }
 
@@ -299,7 +307,6 @@ body {
   width: 1040px;
   /* margin: 0 auto; */
   background-color: #ffe17f;
-  /* background-color: #ffffff; */
   position: absolute;
   top: 100%;
   left: 0;
@@ -307,12 +314,12 @@ body {
   padding: 33px 60px 27px 60px;
   display: flex;
   flex-wrap: wrap;
-  /* display: none; */
+  display: none;
 }
 
-.main-navigation-tooltip-container:hover {
-  display: block;
-}
+/* .main-navigation-tooltip-container:hover {
+  display: flex;
+} */
 
 /* .main-navigation-tooltip {
   width: 1040px; */
@@ -344,6 +351,8 @@ body {
 }
 
 .tooltip-catalog-link {
+  margin: 0;
+  padding: 0;
   text-decoration: none;
   color: #000000;
   font-family: "Rubik", sans-serif;
@@ -352,17 +361,44 @@ body {
   line-height: 18px;
   text-transform: none;
   letter-spacing: normal;
+  outline: none;
 
-  padding-bottom: 28px;
+  /* margin-bottom: 30px; */
+}
+
+.tooltip-catalog-link:hover {
+  opacity: 0.6;
+}
+
+.tooltip-catalog-link:active {
+  opacity: 0.3;
 }
 
 .tooltip-catalog-list-item {
   margin: 0;
   padding: 0;
+  margin-bottom: 28px;
 }
 
-/*  */
-/*  */
+.tooltip-catalog-title {
+  margin: 0;
+  padding: 0;
+}
+
+.tooltip-catalog-title:focus-visible::after {
+  content: "";
+  position: absolute;
+  outline: 2px solid #af4fff;
+  display: block;
+  /* width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  left: -2px;
+  top: -2px;
+  right: -2px;
+  bottom: -2px; */
+  inset: -2px;
+}
+
 .user-navigation-list-catalog.catalog {
   display: flex;
   justify-content: space-between;
@@ -406,7 +442,7 @@ body {
 .user-navigation-link:focus-visible::after {
   content: "";
   position: absolute;
-  outline: 2px solid #af4fff;
+  outline: 2px solid rgba(175, 79, 255, 1);
   /* display: block;
   width: calc(100% + 4px);
   height: calc(100% + 4px); */
@@ -414,6 +450,7 @@ body {
   top: -2px;
   right: -2px;
   bottom: -2px;
+  /* opacity: 1; */
 }
 
 /* Main navigation */
@@ -441,27 +478,15 @@ body {
   position: relative;
 }
 
-/* Main Navigation Wrapper */
-.main-navigation-wrapper:hover .main-navigation-tooltip-container {
-  display: block;
-}
-
-.main-navigation-catalog-link .main-navigation-tooltip-container {
-}
-
-/* .main-navigation-catalog-link:hover + .main-navigation-tooltip-container {
-  display: block;
-} */
-
 .main-navigation-catalog-link:focus-visible::after {
   content: "";
   position: absolute;
   outline: 2px solid #af4fff;
   display: block;
   left: -1px;
-  top: 16px;
+  top: 14px;
   right: -2px;
-  bottom: 16px;
+  bottom: 14px;
 }
 
 /* Plus & Minus */
@@ -2523,14 +2548,18 @@ input.range-input::-webkit-inner-spin-button {
 }
 
 /* Circle New */
-.product-card .new + .product-card-image-wrapper:before {
-  /* position: absolute; */
+.product-card.new .product-card-image-wrapper::after {
+  position: absolute;
   content: "";
   background-image: url(../images/circle-new.svg);
   background-repeat: no-repeat;
   background-size: 60px;
   background-position: right;
-  z-index: 10;
+  z-index: 9;
+  width: 60px;
+  height: 60px;
+  top: 27px;
+  right: 27px;
 }
 
 .product-card:hover .product-card-description {
@@ -2546,6 +2575,7 @@ input.range-input::-webkit-inner-spin-button {
   position: absolute;
   inset: 0;
   background-color: rgba(240, 240, 240, 0.8);
+  z-index: 10;
 }
 
 .product-card:hover .circle-new {
@@ -2579,7 +2609,7 @@ input.range-input::-webkit-inner-spin-button {
   color: #000000;
   text-decoration: none;
   display: none;
-  z-index: 2;
+  z-index: 11;
 }
 
 .product-card-description {
