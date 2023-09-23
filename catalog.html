@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Catalog</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" href="../images/favicon.ico" />
+    <!-- 32×32 -->
   </head>
   <body>
     <header class="main-header">
       <!-- User navigation -->
       <div class="container">
         <div class="navigation-container">
-          <a href="index.html" class="main-logo">
+          <a class="main-logo" href="index.html">
             <img
               class="logo-black"
               src="images/logo-device-black.svg"
@@ -33,8 +35,8 @@
                 >
                   <span class="visually-hidden">Device</span>
                   <input
-                    type="search"
                     class="field"
+                    type="search"
                     placeholder="Поиск по сайту"
                     name="search-device"
                     id="search-device"
@@ -128,12 +130,12 @@
                     <!-- <h2 class="popover-title">Корзина</h2> -->
                     <ul class="cart-item-list">
                       <li class="cart-item">
-                        <a href="#" class="popover-cart-item">
+                        <a class="popover-cart-item" href="#">
                           <img
                             src="images/product-1.jpg"
                             alt="Любительская селфи-палка."
-                            width="39px"
-                            height="43px"
+                            width="39"
+                            height="43"
                           />
                           <p class="cart-item-title">
                             Любительская селфи-палка
@@ -159,13 +161,13 @@
                       </li>
 
                       <li class="cart-item">
-                        <a href="#" class="popover-cart-item">
+                        <a class="popover-cart-item" href="#">
                           <img
                             src="images/product-2.jpg"
                             alt="Профессиональная
                           селфи-палка."
-                            width="39px"
-                            height="43px"
+                            width="39"
+                            height="43"
                           />
                           <p class="cart-item-title">
                             Профессиональная селфи-палка
@@ -196,7 +198,7 @@
                         <p class="sum-money">Сумма: 2000 ₽</p>
                       </div>
                     </div>
-                    <a href="#" class="open-cart-button">
+                    <a class="open-cart-button" href="#">
                       <p class="open-cart-button-text">Открыть корзину</p>
                     </a>
                   </div>
@@ -218,17 +220,17 @@
                 <!-- Tooltip Catalog List -->
                 <ul class="tooltip-catalog-list-1">
                   <li class="tooltip-catalog-list-item">
-                    <a href="#" class="tooltip-catalog-link">
+                    <a class="tooltip-catalog-link" href="#">
                       <p class="toltip-catalog-title">Виртуальная реальность</p>
                     </a>
                   </li>
                   <li class="tooltip-catalog-list-item">
-                    <a href="#" class="tooltip-catalog-link">
+                    <a class="tooltip-catalog-link" href="#">
                       <p class="toltip-catalog-title">Моноподы для cелфи</p>
                     </a>
                   </li>
                   <li class="tooltip-catalog-list-item">
-                    <a href="#" class="tooltip-catalog-link">
+                    <a class="tooltip-catalog-link" href="#">
                       <p class="toltip-catalog-title">Экшн-камеры</p>
                     </a>
                   </li>
@@ -236,12 +238,12 @@
 
                 <ul class="tooltip-catalog-list-2">
                   <li class="tooltip-catalog-list-item">
-                    <a href="#" class="tooltip-catalog-link">
+                    <a class="tooltip-catalog-link" href="#">
                       <p class="toltip-catalog-title">Фитнес-браслеты</p>
                     </a>
                   </li>
                   <li class="tooltip-catalog-list-item">
-                    <a href="#" class="tooltip-catalog-link">
+                    <a class="tooltip-catalog-link" href="#">
                       <p class="toltip-catalog-title">Умные часы</p>
                     </a>
                   </li>
@@ -249,7 +251,7 @@
 
                 <ul class="tooltip-catalog-list-3">
                   <li class="tooltip-catalog-list-item">
-                    <a href="#" class="tooltip-catalog-link">
+                    <a class="tooltip-catalog-link" href="#">
                       <p class="toltip-catalog-title-6">Квадрокоптеры</p>
                     </a>
                   </li>
@@ -299,8 +301,8 @@
 
             <!-- Form  -->
             <form
-              action="https://echo.htmlacademy.ru/"
               class="catalog-filter"
+              action="https://echo.htmlacademy.ru/"
               method="get"
             >
               <!-- Fieldset -->
@@ -329,11 +331,11 @@
 
                   <!-- Price -->
                   <div class="range-wrapper-inputs">
-                    <label for="from" class="catalog-filter-label from">
+                    <label class="catalog-filter-label from" for="from">
                       от
                       <input
-                        type="number"
                         class="range-input"
+                        type="number"
                         value="0"
                         name="min-price"
                         id="from"
@@ -343,8 +345,8 @@
                     <label for="till" class="catalog-filter-label till"
                       >до
                       <input
-                        type="number"
                         class="range-input"
+                        type="number"
                         value="5000"
                         name="max-price"
                         id="till"
@@ -360,11 +362,11 @@
                 <!-- Checkbox List -->
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item checked">
-                    <label for="color-black" class="control">
+                    <label class="control" for="color-black">
                       <input
+                        class="visually-hidden control-input"
                         name="color-black"
                         type="checkbox"
-                        class="visually-hidden control-input"
                         id="color-black"
                         checked
                       />
@@ -373,11 +375,11 @@
                     </label>
                   </li>
                   <li class="catalog-filter-item checked">
-                    <label for="color-white" class="control">
+                    <label class="control" for="color-white">
                       <input
+                        class="visually-hidden control-input"
                         name="color-white"
                         type="checkbox"
-                        class="visually-hidden control-input"
                         id="color-white"
                         checked
                       />
@@ -386,11 +388,11 @@
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label for="color-blue" class="control">
+                    <label class="control" for="color-blue">
                       <input
+                        class="visually-hidden control-input"
                         name="color-blue"
                         type="checkbox"
-                        class="visually-hidden control-input"
                         id="color-blue"
                       />
                       <span class="control-mark"></span>
@@ -398,11 +400,11 @@
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label for="color-red" class="control">
+                    <label class="control" for="color-red">
                       <input
+                        class="visually-hidden control-input"
                         name="color-red"
                         type="checkbox"
-                        class="visually-hidden control-input"
                         id="color-red"
                       />
                       <span class="control-mark"></span>
@@ -410,11 +412,11 @@
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label for="color-pink" class="control">
+                    <label class="control" for="color-pink">
                       <input
+                        class="visually-hidden control-input"
                         name="color-pink"
                         type="checkbox"
-                        class="visually-hidden control-input"
                         id="color-pink"
                       />
                       <span class="control-mark"></span>
@@ -433,10 +435,10 @@
                   <li class="catalog-filter-item checked-radio">
                     <label class="control">
                       <input
+                        class="control-input"
                         name="bluetooth"
                         value="with-bluetooth"
                         type="radio"
-                        class="control-input"
                         checked
                       />
                       <span class="control-mark"></span>
@@ -446,10 +448,10 @@
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input
+                        class="control-input"
                         name="bluetooth"
                         value="without-bluetooth"
                         type="radio"
-                        class="control-input"
                       />
                       <span class="control-mark"></span>
                       <span class="control-label">Нет</span>
@@ -536,16 +538,15 @@
                 <li class="product-card">
                   <div class="product-card-image-wrapper">
                     <img
+                      class="product-card-img"
                       src="images/product-1.jpg"
                       width="360"
                       height="380"
                       alt="Любительская селфи-палка."
-                      class="product-card-img"
                     />
                     <a
+                      class="more-product-list button-yellow visually-hidden"
                       href="#"
-                      class="more-product-list button-yellow"
-                      class="visually-hidden"
                       ><span>Подробнее</span></a
                     >
                   </div>
@@ -561,16 +562,15 @@
                 <li class="product-card new">
                   <div class="product-card-image-wrapper">
                     <img
+                      class="product-card-img"
                       src="images/product-2.jpg"
                       width="360"
                       height="380"
                       alt="Профессиональная селфи-палка."
-                      class="product-card-img"
                     />
                     <a
+                      class="more-product-list button-yellow visually-hidden"
                       href="#"
-                      class="more-product-list button-yellow"
-                      class="visually-hidden"
                       ><span>Подробнее</span></a
                     >
                   </div>
@@ -585,16 +585,15 @@
                 <li class="product-card new">
                   <div class="product-card-image-wrapper">
                     <img
+                      class="product-card-img"
                       src="images/product-3.jpg"
                       width="360"
                       height="380"
                       alt="Непотопляемая селфи-палка."
-                      class="product-card-img"
                     />
                     <a
+                      class="more-product-list button-yellow visually-hidden"
                       href="#"
-                      class="more-product-list button-yellow"
-                      class="visually-hidden"
                       ><span>Подробнее</span></a
                     >
                   </div>
@@ -609,16 +608,15 @@
                 <li class="product-card">
                   <div class="product-card-image-wrapper">
                     <img
+                      class="product-card-img"
                       src="images/product-4.jpg"
                       width="360"
                       height="380"
                       alt="Селфи-палка «Следуй за мной»."
-                      class="product-card-img"
                     />
                     <a
+                      class="more-product-list button-yellow visually-hidden"
                       href="#"
-                      class="more-product-list button-yellow"
-                      class="visually-hidden"
                       ><span>Подробнее</span></a
                     >
                   </div>
@@ -664,11 +662,11 @@
                     >
                   </li>
                   <li class="pagination-item">
-                    <a href="#" class="pagination-link-number">15</a>
+                    <a class="pagination-link-number" href="#">15</a>
                   </li>
                 </ul>
 
-                <a href="#" class="pagination-link pagination-next">Вперёд</a>
+                <a class="pagination-link pagination-next" href="#">Вперёд</a>
               </div>
             </section>
           </div>
@@ -682,7 +680,7 @@
         <!-- Address -->
         <!-- <section class="address"> -->
         <!-- <h2 class="visually-hidden">Адрес</h2> -->
-        <a href="#" class="logo-yellow">
+        <a class="logo-yellow" href="#">
           <img
             src="images/logo-device-yellow.svg"
             width="145"
@@ -784,7 +782,7 @@
         <a class="contacts-phone-footer" href="tel:+78128121212"
           >Тел.: +7 (812) 812-12-12</a
         >
-        <a href="https://htmlacademy.ru/" class="logo-html-academy-link">
+        <a class="logo-html-academy-link" href="https://htmlacademy.ru/">
           <svg
             class="logo-html-academy-img"
             xmlns="http://www.w3.org/2000/svg"
