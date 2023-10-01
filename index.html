@@ -41,7 +41,7 @@
                   />
                 </label>
 
-                <button class="button-search" type="submit">
+                <button class="button-search nonactive" type="submit">
                   <span>Найти</span>
                 </button>
               </form>
@@ -90,26 +90,27 @@
               </li>
               <li class="user-navigation-item">
                 <a class="user-navigation-link basket" href="#">
-                  <!-- <svg
-                    class="navigation-icon"
+                  <span class="items-number">2</span>
+                  <svg
+                    class="navigation-icon icon-basket"
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="14"
                     viewBox="0 0 16 14"
                     fill="none"
                   >
-                    <g clip-path="url(#clip0_45973_962)">
+                    <g clip-path="url(#clip0_46788_962)">
                       <path
                         d="M15.3 5L11.8 5.2L8.6 0.3C8.5 0.1 8.2 0 8 0C7.8 0 7.5 0.1 7.4 0.3L4.2 5.2H0.7C0.3 5.2 0 5.5 0 5.9C0 6 0 6 0 6.1L1.9 12.9C2.1 13.6 2.6 14 3.3 14H12.7C13.4 14 13.9 13.6 14.1 12.9L16 6C16 5.9 16 5.9 16 5.8C16 5.4 15.7 5 15.3 5ZM8 1.9L10.2 5.1H5.9L8 1.9Z"
                         fill="black"
                       />
                     </g>
                     <defs>
-                      <clipPath id="clip0_45973_962">
+                      <clipPath id="clip0_46788_962">
                         <rect width="16" height="14" fill="white" />
                       </clipPath>
-                    </defs></svg
-                  > -->
+                    </defs>
+                  </svg>
                   Корзина
                 </a>
 
@@ -205,7 +206,9 @@
               </a>
 
               <!-- Main Navigation Tooltip Catalog -->
-              <div class="main-navigation-tooltip-container">
+              <div
+                class="main-navigation-tooltip-container main-navigation-tooltip-close"
+              >
                 <!-- Tooltip Catalog List -->
                 <ul class="tooltip-catalog-list-1">
                   <li class="tooltip-catalog-list-item">
@@ -214,7 +217,7 @@
                     </a>
                   </li>
                   <li class="tooltip-catalog-list-item">
-                    <a class="tooltip-catalog-link" href="#"
+                    <a class="tooltip-catalog-link" href="catalog.html"
                       >Моноподы для cелфи
                     </a>
                   </li>
@@ -333,7 +336,9 @@
                     Мотивирующие фитнес-браслеты помогут найти в себе силы не
                     пропускать занятия и соблюдать диету.
                   </p>
-                  <a class="samples-more" href="#">Подробнее</a>
+                  <a class="samples-more button-yellow" href="#"
+                    ><span>Подробнее</span></a
+                  >
 
                   <table class="samples-distance">
                     <tr>
@@ -371,7 +376,9 @@
                     Самая длинная палка для селфи доступна в нашем магазине.
                     Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
                   </p>
-                  <a class="samples-more" href="#">Подробнее</a>
+                  <a class="samples-more button-yellow" href="#"
+                    ><span>Подробнее</span></a
+                  >
 
                   <table class="samples-distance">
                     <tr>
@@ -449,7 +456,7 @@
         <h2 class="visually-hidden">Каталог товаров</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <a class="catalog-link" href="#">
+            <a class="cataFlog-link" href="#">
               <div class="catalog-image-wrapper">
                 <img
                   class="catalog-image"
@@ -662,44 +669,9 @@
             транспортными компаниями:
           </p>
           <ul class="delivery-companies">
-            <li class="delivery-companies-item">
-              <!-- <svg
-                  class="delivery-companies-yellow-circle"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="9"
-                  height="8"
-                  viewBox="0 0 9 8"
-                  fill="none"
-                >
-                  <circle cx="4.50006" cy="4" r="4" fill="#FFC700" /></svg
-                > -->
-              Меловые линии
-            </li>
-            <li class="delivery-companies-item">
-              <!-- <svg
-                  class="delivery-companies-yellow-circle"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="9"
-                  height="8"
-                  viewBox="0 0 9 8"
-                  fill="none"
-                >
-                  <circle cx="4.50006" cy="4" r="4" fill="#FFC700" /></svg
-                > -->
-              СДИК
-            </li>
-            <li class="delivery-companies-item">
-              <!-- <svg
-                  class="delivery-companies-yellow-circle"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="9"
-                  height="8"
-                  viewBox="0 0 9 8"
-                  fill="none"
-                >
-                  <circle cx="4.50006" cy="4" r="4" fill="#FFC700" /></svg> -->
-              ТоксБерри
-            </li>
+            <li class="delivery-companies-item">Меловые линии</li>
+            <li class="delivery-companies-item">СДИК</li>
+            <li class="delivery-companies-item">ТоксБерри</li>
           </ul>
           <a class="more-about-us button-yellow" href="#"
             ><span>Подробнее о нас</span></a
@@ -794,18 +766,13 @@
           />
         </a>
         <!-- Address -->
-        <!-- <section class="address"> -->
-        <!-- <h2 class="visually-hidden">Адрес</h2> -->
 
         <div class="footer-grid-container">
           <p class="footer-address">
             Санкт-Петербург, набережная реки Карповки, 5, литера П.
           </p>
-          <!-- </section> -->
 
           <!-- Footer Navigation -->
-          <!-- <section class="footer-navigation">
-              <h2 class="visually-hidden">Навигация</h2> -->
           <ul class="footer-navigation-list">
             <li class="footer-navigation-item">
               <a class="footer-navigation-link" href="#">Доставка</a>
@@ -954,7 +921,7 @@
     </footer>
 
     <!-- Modal Window -->
-    <div class="modal-container">
+    <div class="modal-container modal-close">
       <div class="modal modal-delivery">
         <section class="modal-content">
           <div class="modal-title-close-button">
