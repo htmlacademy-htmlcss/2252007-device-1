@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Catalog</title>
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="icon" href="favicon.ico" />
-    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" />
     <!-- 32×32 -->
   </head>
   <body>
@@ -23,7 +22,7 @@
               alt="Логотип фирмы Девайс."
             />
           </a>
-          <nav class="user-navigation-catalog">
+          <nav class="user-navigation user-navigation-catalog">
             <div class="container-form">
               <form
                 class="search-form"
@@ -42,7 +41,7 @@
                   />
                 </label>
 
-                <button class="button-search" type="submit">
+                <button class="button-search nonactive" type="submit">
                   <span>Найти</span>
                 </button>
               </form>
@@ -124,7 +123,7 @@
                 </a>
 
                 <!-- Popover -->
-                <div class="popover popover-cart">
+                <div class="popover popover-cart popover-close">
                   <div class="popover-content">
                     <!-- <h2 class="popover-title">Корзина</h2> -->
                     <ul class="cart-item-list">
@@ -207,7 +206,7 @@
           </nav>
 
           <!-- Main navigation -->
-          <nav class="main-navigation">
+          <nav class="main-navigation main-navigation-catalog">
             <div class="main-navigation-wrapper">
               <a class="main-navigation-catalog-link" href="catalog.html">
                 <p class="items-catalog">Каталог товаров</p>
@@ -215,9 +214,11 @@
               </a>
 
               <!-- Main Navigation Tooltip Catalog -->
-              <div class="main-navigation-tooltip-container">
+              <div
+                class="main-navigation-tooltip-container main-navigation-tooltip-close"
+              >
                 <!-- Tooltip Catalog List -->
-                <ul class="tooltip-catalog-list-1">
+                <ul class="tooltip-catalog-list">
                   <li class="tooltip-catalog-list-item">
                     <a class="tooltip-catalog-link" href="#"
                       >Виртуальная реальность
@@ -233,7 +234,7 @@
                   </li>
                 </ul>
 
-                <ul class="tooltip-catalog-list-2">
+                <ul class="tooltip-catalog-list">
                   <li class="tooltip-catalog-list-item">
                     <a class="tooltip-catalog-link" href="#"
                       >Фитнес-браслеты
@@ -244,7 +245,7 @@
                   </li>
                 </ul>
 
-                <ul class="tooltip-catalog-list-3">
+                <ul class="tooltip-catalog-list">
                   <li class="tooltip-catalog-list-item">
                     <a class="tooltip-catalog-link" href="#">Квадрокоптеры </a>
                   </li>
@@ -463,11 +464,13 @@
           <div class="sorting-container">
             <section class="sorting">
               <h2>Сортировка:</h2>
-              <select class="select-control" aria-label="Сортировка">
-                <option value="popular">Популярные</option>
-                <option value="cheap">Дешевые</option>
-                <option value="expensive">Дорогие</option>
-              </select>
+              <div class="select-sorting">
+                <select class="select-control" aria-label="Сортировка">
+                  <option value="popular">Популярные</option>
+                  <option value="cheap">Дешевые</option>
+                  <option value="expensive">Дорогие</option>
+                </select>
+              </div>
 
               <ul class="sort-list">
                 <li class="sort-item">
@@ -478,6 +481,8 @@
                       height="10"
                       viewBox="0 0 12 10"
                       fill="none"
+                      role="img"
+                      aria-label="Стрелочка вверх."
                     >
                       <g clip-path="url(#clip0_11478_2970)">
                         <path d="M6 0L11.5 10H0.5" fill="black" />
@@ -502,6 +507,8 @@
                       height="10"
                       viewBox="0 0 12 10"
                       fill="none"
+                      role="img"
+                      aria-label="Стрелочка вниз."
                     >
                       <g clip-path="url(#clip0_45973_681)">
                         <path
@@ -709,6 +716,8 @@
                   height="12"
                   viewBox="0 0 14 12"
                   fill="none"
+                  role="img"
+                  aria-label="Телеграм."
                 >
                   <g clip-path="url(#clip0_45973_808)">
                     <path
@@ -734,6 +743,8 @@
                   height="11"
                   viewBox="0 0 16 11"
                   fill="none"
+                  role="img"
+                  aria-label="Ютуб."
                 >
                   <g clip-path="url(#clip0_45973_813)">
                     <path
@@ -758,6 +769,8 @@
                   height="14"
                   viewBox="0 0 16 16"
                   id="twitter"
+                  role="img"
+                  aria-label="Твиттер."
                 >
                   <path
                     d="M16 3.539a6.839 6.839 0 0 1-1.89.518 3.262 3.262 0 0 0 1.443-1.813 6.555 6.555 0 0 1-2.08.794 3.28 3.28 0 0 0-5.674 2.243c0 .26.022.51.076.748a9.284 9.284 0 0 1-6.761-3.431 3.285 3.285 0 0 0 1.008 4.384A3.24 3.24 0 0 1 .64 6.578v.036a3.295 3.295 0 0 0 2.628 3.223 3.274 3.274 0 0 1-.86.108 2.9 2.9 0 0 1-.621-.056 3.311 3.311 0 0 0 3.065 2.285 6.59 6.59 0 0 1-4.067 1.399c-.269 0-.527-.012-.785-.045A9.234 9.234 0 0 0 5.032 15c6.036 0 9.336-5 9.336-9.334 0-.145-.005-.285-.012-.424A6.544 6.544 0 0 0 16 3.539z"
@@ -779,6 +792,8 @@
               height="33"
               viewBox="0 0 115 33"
               fill="none"
+              role="img"
+              aria-label="Логотип HTML Академии"
             >
               <path d="M0 12.9V15.5H2.5V12.9H0Z" fill="white" />
               <path
