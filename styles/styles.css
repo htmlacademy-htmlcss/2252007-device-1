@@ -2462,10 +2462,6 @@ input.range-input::-webkit-inner-spin-button {
   margin-top: -1px;
 }
 
-.control-input {
-  display: none;
-}
-
 .catalog-filter-item {
   padding-bottom: 17px;
 }
@@ -2503,6 +2499,10 @@ input.range-input::-webkit-inner-spin-button {
   background-size: 10px;
 }
 
+.control-input {
+  position: relative;
+}
+
 .control-input[type="checkbox"]:checked + .control-mark {
   background-image: url("../images/tick.svg");
   border: 2px solid #000000;
@@ -2520,6 +2520,10 @@ input.range-input::-webkit-inner-spin-button {
   position: absolute;
   outline: 2px solid #af4fff;
   inset: -2px;
+  left: -2px;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
 }
 
 .control:hover .control-mark {
@@ -2842,10 +2846,10 @@ input.range-input::-webkit-inner-spin-button {
   outline: 2px solid #af4fff;
 
   display: block;
-  width: 765px;
-  height: 65px;
   left: -5px;
   top: -5px;
+  bottom: -5px;
+  right: -5px;
 }
 
 .button-product-list:disabled {
