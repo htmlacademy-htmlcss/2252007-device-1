@@ -127,7 +127,7 @@ body {
   font-weight: 400;
   display: flex;
   /* margin: 0; */
-  margin-bottom: 14px;
+  margin-bottom: 29px;
 }
 
 .user-navigation-catalog {
@@ -167,16 +167,15 @@ body {
   position: relative;
 }
 
-/* .search-label:focus-within::before {
+.search-label:focus-within::before {
   content: "";
   position: absolute;
-  outline: 2px solid #af4fff;
   left: -2px;
   top: -2px;
   right: -2px;
   bottom: -2px;
-  inset: -2px;
-}  */
+  outline: 2px solid #af4fff;
+}
 
 .search-label-catalog:focus-within::before {
   bottom: 28px;
@@ -212,7 +211,8 @@ body {
 
 .button-search {
   width: 158px;
-  height: 40px;
+  /* height: 40px; */
+  min-height: 40px;
   padding: 8px;
   border: 2px solid #000000;
   border-radius: 0 50px 50px 0;
@@ -353,7 +353,6 @@ body {
   text-transform: none;
   letter-spacing: normal;
   outline: none;
-
   /* margin-bottom: 30px; */
   position: relative;
 }
@@ -425,19 +424,9 @@ body {
   position: relative;
 }
 
-.compare-main-page {
-  position: absolute;
-  left: -121px;
-  top: -15px;
-}
-
 .user-navigation-link.basket {
-  /* display: block; */
-  /* padding-left: 40px; */
-  /* margin-left: auto; */
-  /* margin-left: -7px; */
-  /* padding-left: 33px; */
   position: relative;
+  margin-left: 17px;
 }
 
 .icon-basket {
@@ -461,8 +450,9 @@ body {
   border-radius: 50%;
   top: 0;
   left: -14px;
-  padding-top: 3px;
+  padding-top: 2px;
   box-sizing: border-box;
+  /* margin-left: 10px; */
 }
 
 .user-navigation-link:hover {
@@ -477,9 +467,6 @@ body {
   content: "";
   position: absolute;
   outline: 2px solid rgba(175, 79, 255, 1);
-  /* display: block;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px); */
   left: -2px;
   top: -2px;
   right: -2px;
@@ -495,9 +482,6 @@ body {
   font-weight: 800;
   letter-spacing: 3.6px;
   text-transform: uppercase;
-  /* margin: 0;
-  padding: 0; */
-  /* z-index: 2; */
 }
 
 .main-navigation-catalog {
@@ -598,9 +582,6 @@ body {
   content: "";
   position: absolute;
   outline: 2px solid #af4fff;
-  /* display: block;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px); */
   left: -2px;
   top: -2px;
   right: -2px;
@@ -721,7 +702,6 @@ body {
   margin-bottom: 26px;
   width: 307px;
 
-  /* border-spacing: 20px 12px; */
   border-collapse: collapse;
 }
 
@@ -849,12 +829,6 @@ body {
 }
 
 /* Catalog */
-.catalog {
-  /* margin: 0 auto;
-  width: 1160px; */
-  margin-bottom: 66px;
-}
-
 .catalog-list {
   margin: 0;
   padding: 0;
@@ -983,7 +957,6 @@ body {
 }
 
 .services-link.current:hover {
-  /* padding: 10px 158px 10px 35px; */
   padding: 5px 120px 5px 0;
 }
 
@@ -1021,7 +994,6 @@ body {
 }
 
 .services-slider-item.slider-delivery {
-  /* background-position: right center; */
   background-image: url("../images/services-slider-1.svg");
   background-position: right 75px;
 }
@@ -1124,8 +1096,6 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  /* color: #dcdcdc; */
-  /* padding: 20px; */
   display: block;
   background-color: rgba(220, 220, 220, 0.5);
   position: absolute;
@@ -1154,7 +1124,6 @@ body {
 }
 
 .modal {
-  /* position: relative; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1422,7 +1391,9 @@ body {
   top: 36px;
   right: -36px;
   z-index: 6;
+}
 
+.tooltip-text-close {
   display: none;
 }
 
@@ -1446,9 +1417,6 @@ body {
   height: 56px;
   width: 176px;
   display: flex;
-  /* position: absolute; */
-  /* top: 340px;
-  right: 70px; */
   position: relative;
 }
 
@@ -1519,14 +1487,8 @@ body {
 .minus-svg {
   width: 16px;
   height: 16px;
-  /* position: center; */
-  /* top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0; */
 }
 
-/* About us */
 /* About us */
 .about-us-contacts {
   font-family: "Rubik", sans-serif;
@@ -1810,10 +1772,10 @@ li.delivery-companies-item::before {
   outline: 2px solid #af4fff;
 
   display: block;
-  width: 267px;
-  height: 61px;
   left: -5px;
   top: -5px;
+  right: -5px;
+  bottom: -5px;
 }
 
 .subscription-button:disabled {
@@ -1868,9 +1830,6 @@ li.delivery-companies-item::before {
   content: "";
   position: absolute;
   outline: 2px solid #af4fff;
-  /* display: block;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px); */
   left: -2px;
   top: -2px;
   right: -2px;
@@ -2019,9 +1978,6 @@ li.delivery-companies-item::before {
   content: "";
   position: absolute;
   outline: 2px solid #af4fff;
-  /* display: block;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px); */
   inset: -2px;
 }
 
@@ -2042,9 +1998,6 @@ li.delivery-companies-item::before {
   content: "";
   position: absolute;
   outline: 2px solid #af4fff;
-  /* display: block;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px); */
   inset: -2px;
 }
 
@@ -2072,9 +2025,6 @@ li.delivery-companies-item::before {
   outline: 2px solid #af4fff;
   content: "";
   position: absolute;
-  /* display: block;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px); */
   left: -2px;
   top: -2px;
   right: -2px;
@@ -2182,8 +2132,6 @@ li.delivery-companies-item::before {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  /* margin-left: 60px; */
-  /* justify-content: space-between; */
   list-style: none;
   /* margin-bottom: 34px; */
 }
@@ -2228,9 +2176,6 @@ li.delivery-companies-item::before {
   content: "";
   position: absolute;
   outline: 2px solid #af4fff;
-  /* display: block;
-    width: calc(100% + 4px);
-    height: calc(100% + 4px); */
   inset: -2px;
 }
 
@@ -2297,11 +2242,6 @@ li.delivery-companies-item::before {
 }
 
 /* Range scale */
-/* .range {
-  position: relative;
-  margin-bottom: 11px;
-} */
-
 .range-scale {
   position: relative;
   height: 2px;
@@ -2538,13 +2478,6 @@ input.range-input::-webkit-inner-spin-button {
   opacity: 0.1;
 }
 
-/* .control:focus-visible .control-mark::after {
-  content: "";
-  position: absolute;
-  outline: 2px solid #af4fff;
-  inset: -4px;
-} */
-
 /* Radio */
 .button-filter {
   text-align: center;
@@ -2585,10 +2518,6 @@ input.range-input::-webkit-inner-spin-button {
   outline: 2px solid #af4fff;
   inset: -2px;
 }
-
-/* .radio {
-  padding-right: 16px;
-} */
 
 /* Sorting */
 .sorting {
@@ -2866,12 +2795,6 @@ input.range-input::-webkit-inner-spin-button {
   /* padding: 25px; */
   align-items: center;
 }
-
-/* .pagination-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-} */
 
 .pagination-pages {
   margin: 0;
