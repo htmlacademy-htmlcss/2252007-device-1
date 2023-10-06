@@ -199,6 +199,10 @@ body {
   position: relative;
 }
 
+.field-catalog::placeholder {
+  color: rgba(0, 0, 0, 1);
+}
+
 .field:disabled {
   opacity: 0.3;
 }
@@ -496,6 +500,11 @@ body {
   top: 14px;
   right: -2px;
   bottom: 14px;
+}
+
+.main-navigation-catalog-link:focus-visible
+  + .main-navigation-tooltip-container {
+  display: flex;
 }
 
 /* Plus & Minus */
