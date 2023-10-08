@@ -122,7 +122,7 @@ body {
   line-height: 30px;
   font-weight: 400;
   display: flex;
-  margin-bottom: 29px;
+  margin-bottom: 14px;
 }
 
 .user-navigation-catalog {
@@ -131,7 +131,7 @@ body {
   line-height: 30px;
   font-weight: 400;
   display: flex;
-  margin-bottom: -47px;
+  margin-bottom: 27px;
   position: relative;
 }
 
@@ -613,6 +613,10 @@ body {
   display: block;
 }
 
+.samples-about {
+  margin-top: 2px;
+}
+
 .samples-list-inner {
   margin: 0;
   padding: 0;
@@ -810,6 +814,10 @@ body {
 }
 
 /* Catalog */
+.catalog-main {
+  margin-bottom: 63px;
+}
+
 .catalog-list {
   margin: 0;
   padding: 0;
@@ -940,7 +948,7 @@ body {
   outline: 2px solid #af4fff;
   display: block;
   width: 292px;
-  height: 56px;
+  height: 4%;
   left: -3px;
   top: -3px;
 }
@@ -2185,7 +2193,7 @@ li.delivery-companies-item::before {
 }
 
 .catalog-filter-title {
-  margin-bottom: 21px;
+  margin-bottom: 22px;
 }
 
 /* Range scale */
@@ -2280,6 +2288,7 @@ li.delivery-companies-item::before {
 
 .range-wrapper-inputs {
   display: flex;
+  margin-top: 13px;
 }
 
 .catalog-filter-label {
@@ -2358,6 +2367,11 @@ input.range-input::-webkit-inner-spin-button {
   position: relative;
   display: block;
   padding-left: 36px;
+}
+
+.control-label {
+  position: absolute;
+  margin-left: 1px;
 }
 
 .control-radio {
@@ -2490,9 +2504,10 @@ input.range-input::-webkit-inner-spin-button {
   border: none;
   background-color: #f0f0f0;
   margin-left: -12px;
-  padding-right: 4px;
+  padding-right: 1px;
   position: relative;
   outline: none;
+  margin-top: 7px;
 }
 
 .select-control:hover {
