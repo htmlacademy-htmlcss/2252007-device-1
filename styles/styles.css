@@ -135,16 +135,6 @@ body {
   position: relative;
 }
 
-.user-navigation-catalog:focus-within::before {
-  content: "";
-  position: absolute;
-  left: -2px;
-  top: -2px;
-  right: 680px;
-  bottom: 59px;
-  outline: 2px solid #af4fff;
-}
-
 .container-form {
   margin: 0;
   padding: 0;
@@ -298,6 +288,21 @@ body {
   display: flex;
 }
 
+.main-navigation-wrapper:focus-within .main-navigation-tooltip-container {
+  display: flex;
+}
+
+.tooltip-catalog-link:focus-visible::after {
+  content: "";
+  position: absolute;
+  outline: 2px solid #af4fff;
+  left: -2px;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  inset: -2px;
+}
+
 .main-navigation-tooltip-container {
   width: 1040px;
   background-color: #ffe17f;
@@ -357,7 +362,8 @@ body {
   opacity: 0.3;
 }
 
-.tooltip-catalog-link:focus-visible::after {
+.main-navigation-catalog-link:focus-visible
+  + .tooltip-catalog-link:focus-visible::after {
   content: "";
   position: absolute;
   outline: 2px solid #af4fff;
@@ -390,6 +396,7 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 5px;
+  position: relative;
 }
 
 .user-navigation-list-catalog.catalog {
